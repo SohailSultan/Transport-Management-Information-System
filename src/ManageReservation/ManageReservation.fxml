@@ -1,0 +1,139 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.effect.ColorAdjust?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="648.0" prefWidth="1252.0" style="-fx-background-color: white; -fx-border-color: silver; -fx-border-width: 2px;" stylesheets="@../ManageVehicle/ManageVehicle.css" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="ManageReservation.ManageReservationController">
+   <children>
+      <Pane layoutY="43.0" prefHeight="2.0" prefWidth="1200.0" style="-fx-background-color: silver;" stylesheets="@../ManageVehicle/ManageVehicle.css" />
+      <Label fx:id="heading_label" layoutX="419.0" layoutY="-6.0" prefHeight="47.0" prefWidth="716.0" stylesheets="@../Dashboard/Dashboard.css" text="Transport Management Information System For IIUI" textAlignment="CENTER" textFill="#9e1c1c">
+         <font>
+            <Font name="Arial Black" size="36.0" />
+         </font>
+         <padding>
+            <Insets bottom="10.0" right="10.0" top="10.0" />
+         </padding>
+      </Label>
+      <Pane fx:id="buttonsPane" layoutX="2.0" layoutY="45.0" prefHeight="600.0" prefWidth="292.0" stylesheets="@../ManageVehicle/ManageVehicle.css">
+         <children>
+            <Label layoutX="44.0" layoutY="116.0" prefHeight="21.0" prefWidth="204.0" stylesheets="@../ManageVehicle/ManageVehicle.css" text=" Manage Reservation" textFill="WHITE">
+               <font>
+                  <Font name="Broadway" size="18.0" />
+               </font>
+            </Label>
+            <ImageView fitHeight="65.0" fitWidth="88.0" layoutX="102.0" layoutY="34.0" pickOnBounds="true">
+               <image>
+                  <Image url="@../Pictures/reservation2-icon.png" />
+               </image>
+               <effect>
+                  <ColorAdjust brightness="1.0" />
+               </effect>
+            </ImageView>
+            <JFXButton buttonType="RAISED" layoutY="195.0" onAction="#ViewReservation" prefHeight="64.0" prefWidth="292.0" style="-fx-border-color: silver; -fx-border-width: .3px;" text="View Reservation" textFill="WHITE">
+               <font>
+                  <Font name="Century" size="15.0" />
+               </font>
+            </JFXButton>
+            <JFXButton buttonType="RAISED" layoutY="259.0" onAction="#addReservation" prefHeight="64.0" prefWidth="292.0" style="-fx-border-color: silver; -fx-border-width: .3px;" text="Book Reservation" textFill="WHITE">
+               <font>
+                  <Font name="Century" size="15.0" />
+               </font>
+            </JFXButton>
+            <JFXButton buttonType="RAISED" layoutY="323.0" onAction="#CancelReservation" prefHeight="64.0" prefWidth="292.0" style="-fx-border-color: silver; -fx-border-width: .3px;" text="Cancel Reservation" textFill="WHITE">
+               <font>
+                  <Font name="Century" size="15.0" />
+               </font>
+            </JFXButton>
+            <JFXButton buttonType="RAISED" layoutY="387.0" onAction="#updateReservation" prefHeight="64.0" prefWidth="292.0" style="-fx-border-color: silver; -fx-border-width: .3px;" text="Update Reservation" textFill="WHITE">
+               <font>
+                  <Font name="Century" size="15.0" />
+               </font>
+            </JFXButton>
+            <JFXButton buttonType="RAISED" layoutY="451.0" onAction="#SearchReservation" prefHeight="64.0" prefWidth="292.0" style="-fx-border-color: silver; -fx-border-width: .3px;" text="Search Reservation" textFill="WHITE">
+               <font>
+                  <Font name="Century" size="15.0" />
+               </font>
+            </JFXButton>
+            <ImageView fitHeight="28.0" fitWidth="31.0" layoutX="26.0" layoutY="466.0" pickOnBounds="true">
+               <image>
+                  <Image url="@../Pictures/icons/search-icon.png" />
+               </image>
+               <effect>
+                  <ColorAdjust brightness="1.0" saturation="-1.0" />
+               </effect>
+            </ImageView>
+            <ImageView fitHeight="21.0" fitWidth="31.0" layoutX="26.0" layoutY="409.0" pickOnBounds="true">
+               <image>
+                  <Image url="@../Pictures/edit-icon.png" />
+               </image>
+               <effect>
+                  <ColorAdjust saturation="-1.0" />
+               </effect>
+            </ImageView>
+            <ImageView fitHeight="21.0" fitWidth="31.0" layoutX="26.0" layoutY="345.0" pickOnBounds="true">
+               <image>
+                  <Image url="@../Pictures/delete-icon.png" />
+               </image>
+               <effect>
+                  <ColorAdjust brightness="1.0" />
+               </effect>
+            </ImageView>
+            <ImageView fitHeight="21.0" fitWidth="31.0" layoutX="26.0" layoutY="281.0" pickOnBounds="true">
+               <image>
+                  <Image url="@../Pictures/insert-icon.png" />
+               </image>
+               <effect>
+                  <ColorAdjust brightness="1.0" />
+               </effect>
+            </ImageView>
+            <ImageView fitHeight="21.0" fitWidth="31.0" layoutX="26.0" layoutY="217.0" pickOnBounds="true">
+               <image>
+                  <Image url="@../Pictures/View-icon%20(1).png" />
+               </image>
+               <effect>
+                  <ColorAdjust brightness="1.0" />
+               </effect>
+            </ImageView>
+         </children>
+      </Pane>
+      <AnchorPane fx:id="contentPane" layoutX="303.0" layoutY="45.0" prefHeight="600.0" prefWidth="947.0" stylesheets="@../ManageVehicle/ManageVehicle.css">
+         <children>
+            <Label layoutX="359.0" layoutY="28.0" prefHeight="29.0" prefWidth="260.0" stylesheets="@../ManageVehicle/ManageVehicle.css" text="Reservation List" textFill="WHITE">
+               <font>
+                  <Font name="Broadway" size="25.0" />
+               </font>
+            </Label>
+            <ImageView fitHeight="47.0" fitWidth="101.0" layoutX="241.0" layoutY="17.0" pickOnBounds="true">
+               <image>
+                  <Image url="@../Pictures/reservation-icon.png" />
+               </image>
+               <effect>
+                  <ColorAdjust brightness="1.0" />
+               </effect>
+            </ImageView>
+         </children>
+      </AnchorPane>
+      <JFXButton fx:id="HomePageButton" buttonType="RAISED" layoutX="2.0" layoutY="2.0" onAction="#HomePage" prefHeight="41.0" prefWidth="49.0" style="-fx-background-radius: 50%;" text=" " textFill="WHITE">
+         <font>
+            <Font name="Century" size="12.0" />
+         </font>
+         <graphic>
+            <ImageView fitHeight="33.0" fitWidth="34.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../Pictures/icons/red-home-icon.png" />
+               </image>
+               <effect>
+                  <ColorAdjust brightness="0.41" />
+               </effect>
+            </ImageView>
+         </graphic>
+      </JFXButton>
+   </children>
+</AnchorPane>

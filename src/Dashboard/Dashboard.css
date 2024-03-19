@@ -1,0 +1,24 @@
+#heading_label{
+	-fx-font-size: 24.0px;
+   -fx-font-family: "Arial Black";
+   -fx-fill: #818181;
+   -fx-effect: innershadow( three-pass-box , rgba(0.0,0.0,0.0,0.7) , 0.0, 0.0 , 0.0 , 2.0 );
+}
+
+.buttons{
+	-fx-background-color: linear-gradient(to bottom right, #272b3f,#256b51);
+}
+
+.shadow{
+	
+}
+
+.white_bg{
+	
+}
+
+#screen_pane{
+	-fx-background-color: linear-gradient(to bottom right, #272b3f,#256b51);
+}
+
+	

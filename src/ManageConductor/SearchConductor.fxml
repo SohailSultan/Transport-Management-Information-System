@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.shape.Line?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane fx:id="contentPane" prefHeight="600.0" prefWidth="963.0" stylesheets="@../ManageVehicle/ManageVehicle.css" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="ManageConductor.SearchConductorController">
+   <children>
+      <Pane layoutX="136.0" layoutY="73.0" prefHeight="471.0" prefWidth="681.0" style="-fx-background-color: #948454;">
+         <children>
+            <TextField fx:id="Bus_IDTextField" alignment="CENTER" editable="false" layoutX="333.0" layoutY="408.0" prefHeight="25.0" prefWidth="228.0" styleClass="VehicleTextfields2" stylesheets="@../ManageVehicle/ManageVehicle.css">
+               <font>
+                  <Font name="Times New Roman Bold Italic" size="16.0" />
+               </font></TextField>
+            <Label layoutX="93.0" layoutY="416.0" prefHeight="21.0" prefWidth="149.0" styleClass="VehicleLabes" stylesheets="@../ManageVehicle/ManageVehicle.css" text="Bus Registration #" textFill="WHITE">
+               <font>
+                  <Font name="Century" size="17.0" />
+               </font>
+            </Label>
+            <Label layoutX="96.0" layoutY="146.0" prefHeight="21.0" prefWidth="106.0" styleClass="VehicleLabes" stylesheets="@../ManageVehicle/ManageVehicle.css" text="Name" textFill="WHITE">
+               <font>
+                  <Font name="Century" size="17.0" />
+               </font>
+            </Label>
+            <Label layoutX="93.0" layoutY="194.0" prefHeight="21.0" prefWidth="112.0" styleClass="VehicleLabes" stylesheets="@../ManageVehicle/ManageVehicle.css" text="Father Name" textFill="WHITE">
+               <font>
+                  <Font name="Century" size="17.0" />
+               </font>
+            </Label>
+            <Label layoutX="93.0" layoutY="240.0" prefHeight="21.0" prefWidth="112.0" styleClass="VehicleLabes" stylesheets="@../ManageVehicle/ManageVehicle.css" text="ID card" textFill="WHITE">
+               <font>
+                  <Font name="Century" size="17.0" />
+               </font>
+            </Label>
+            <Label layoutX="93.0" layoutY="284.0" prefHeight="21.0" prefWidth="112.0" styleClass="VehicleLabes" stylesheets="@../ManageVehicle/ManageVehicle.css" text="Age" textFill="WHITE">
+               <font>
+                  <Font name="Century" size="17.0" />
+               </font>
+            </Label>
+            <TextField fx:id="nameTextField" alignment="CENTER" editable="false" layoutX="333.0" layoutY="138.0" prefHeight="25.0" prefWidth="228.0" styleClass="VehicleTextfields2" stylesheets="@../ManageVehicle/ManageVehicle.css">
+               <font>
+                  <Font name="Times New Roman Bold Italic" size="16.0" />
+               </font></TextField>
+            <TextField fx:id="fatherNameTextField" alignment="CENTER" editable="false" layoutX="333.0" layoutY="186.0" prefHeight="25.0" prefWidth="228.0" styleClass="VehicleTextfields2" stylesheets="@../ManageVehicle/ManageVehicle.css">
+               <font>
+                  <Font name="Times New Roman Bold Italic" size="16.0" />
+               </font></TextField>
+            <TextField fx:id="idCardTextField" alignment="CENTER" editable="false" layoutX="333.0" layoutY="232.0" prefHeight="25.0" prefWidth="228.0" styleClass="VehicleTextfields2" stylesheets="@../ManageVehicle/ManageVehicle.css">
+               <font>
+                  <Font name="Times New Roman Bold Italic" size="16.0" />
+               </font></TextField>
+            <TextField fx:id="ageTextField" alignment="CENTER" editable="false" layoutX="333.0" layoutY="276.0" prefHeight="25.0" prefWidth="228.0" styleClass="VehicleTextfields2" stylesheets="@../ManageVehicle/ManageVehicle.css">
+               <font>
+                  <Font name="Times New Roman Bold Italic" size="16.0" />
+               </font></TextField>
+            <Label layoutX="93.0" layoutY="331.0" prefHeight="21.0" prefWidth="112.0" styleClass="VehicleLabes" stylesheets="@../ManageVehicle/ManageVehicle.css" text="Contact" textFill="WHITE">
+               <font>
+                  <Font name="Century" size="17.0" />
+               </font>
+            </Label>
+            <TextField fx:id="contactTextField" alignment="CENTER" editable="false" layoutX="333.0" layoutY="323.0" prefHeight="25.0" prefWidth="228.0" styleClass="VehicleTextfields2" stylesheets="@../ManageVehicle/ManageVehicle.css">
+               <font>
+                  <Font name="Times New Roman Bold Italic" size="16.0" />
+               </font></TextField>
+            <Label layoutX="93.0" layoutY="373.0" prefHeight="21.0" prefWidth="112.0" styleClass="VehicleLabes" stylesheets="@../ManageVehicle/ManageVehicle.css" text="Salary" textFill="WHITE">
+               <font>
+                  <Font name="Century" size="17.0" />
+               </font>
+            </Label>
+            <TextField fx:id="salaryTextField" alignment="CENTER" editable="false" layoutX="333.0" layoutY="365.0" prefHeight="25.0" prefWidth="228.0" styleClass="VehicleTextfields2" stylesheets="@../ManageVehicle/ManageVehicle.css">
+               <font>
+                  <Font name="Times New Roman Bold Italic" size="16.0" />
+               </font></TextField>
+            <TextField fx:id="IDTextField" layoutX="333.0" layoutY="28.0" prefHeight="29.0" prefWidth="228.0" style="-fx-background-radius: 30px;" styleClass="VehicleTextfields" stylesheets="@../ManageVehicle/ManageVehicle.css" />
+            <Label layoutX="40.0" layoutY="32.0" prefHeight="21.0" prefWidth="255.0" styleClass="VehicleLabes" stylesheets="@../ManageVehicle/ManageVehicle.css" text="Enter ID/CNIC of Conductor" textFill="WHITE">
+               <font>
+                  <Font name="Century" size="17.0" />
+               </font>
+            </Label>
+            <Line endX="542.0" layoutX="139.0" layoutY="79.0" startX="-139.0" stroke="WHITE" />
+            <Button fx:id="SearchButton" layoutX="578.0" layoutY="20.0" mnemonicParsing="false" onAction="#SearchRecord" prefHeight="37.0" prefWidth="55.0" style="-fx-background-radius: 100%; -fx-background-color: Transparent;">
+               <graphic>
+                  <ImageView fitHeight="32.0" fitWidth="39.0" pickOnBounds="true">
+                     <image>
+                        <Image url="@../Pictures/search-icon(new).png" />
+                     </image>
+                  </ImageView>
+               </graphic>
+            </Button>
+            <Label layoutX="96.0" layoutY="100.0" prefHeight="21.0" prefWidth="112.0" styleClass="VehicleLabes" stylesheets="@../ManageVehicle/ManageVehicle.css" text="ID" textFill="WHITE">
+               <font>
+                  <Font name="Century" size="17.0" />
+               </font>
+            </Label>
+            <TextField fx:id="ConductorIDTextField" alignment="CENTER" editable="false" layoutX="333.0" layoutY="92.0" prefHeight="25.0" prefWidth="228.0" styleClass="VehicleTextfields2" stylesheets="@../ManageVehicle/ManageVehicle.css">
+               <font>
+                  <Font name="Times New Roman Bold Italic" size="16.0" />
+               </font>
+            </TextField>
+         </children>
+      </Pane>
+      <Label layoutX="361.0" layoutY="14.0" prefHeight="29.0" prefWidth="328.0" stylesheets="@../ManageVehicle/ManageVehicle.css" text="Search Conductor" textFill="WHITE">
+         <font>
+            <Font name="Broadway" size="25.0" />
+         </font>
+      </Label>
+   </children>
+</AnchorPane>

@@ -1,0 +1,174 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import javafx.scene.control.CheckBox?>
+<?import javafx.scene.control.DatePicker?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.Separator?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane fx:id="contentPane" prefHeight="630.0" prefWidth="947.0" stylesheets="@ManageVehicle.css" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="ManageVehicle.UpdateVehicleController">
+   <children>
+      <Pane fx:id="DataPane" layoutX="84.0" layoutY="43.0" prefHeight="573.0" prefWidth="779.0" style="-fx-border-color: white; -fx-background-color: #948454; -fx-border-radius: 10px; -fx-background-radius: 10px;">
+         <children>
+            <JFXButton fx:id="UpdateRecordButton" buttonType="RAISED" layoutX="351.0" layoutY="520.0" onAction="#UpdateRecord" prefHeight="30.0" prefWidth="134.0" ripplerFill="#f2f2f2" style="-fx-background-color: #642938; -fx-border-color: white; -fx-background-radius: 50; -fx-border-radius: 50;" text="Update Record" textFill="WHITE">
+               <font>
+                  <Font name="Times New Roman" size="15.0" />
+               </font>
+            </JFXButton>
+            <TextField fx:id="routeIdField" alignment="CENTER" layoutX="500.0" layoutY="206.0" prefHeight="26.0" prefWidth="228.0" style="-fx-border-color: grey;" stylesheets="@ManageVehicle.css">
+               <font>
+                  <Font name="Times New Roman" size="14.0" />
+               </font>
+            </TextField>
+            <TextField fx:id="driverIdField" alignment="CENTER" layoutX="500.0" layoutY="143.0" prefHeight="26.0" prefWidth="228.0" style="-fx-border-color: grey;" stylesheets="@ManageVehicle.css">
+               <font>
+                  <Font name="Times New Roman" size="14.0" />
+               </font>
+            </TextField>
+            <TextField fx:id="fuelEfficiencyField" alignment="CENTER" layoutX="173.0" layoutY="462.0" prefHeight="26.0" prefWidth="228.0" style="-fx-border-color: grey;" stylesheets="@ManageVehicle.css">
+               <font>
+                  <Font name="Times New Roman" size="14.0" />
+               </font>
+            </TextField>
+            <TextField fx:id="tokenNumberField" alignment="CENTER" layoutX="502.0" layoutY="302.0" prefHeight="26.0" prefWidth="228.0" style="-fx-border-color: grey;" stylesheets="@ManageVehicle.css">
+               <font>
+                  <Font name="Times New Roman" size="14.0" />
+               </font>
+            </TextField>
+            <TextField fx:id="tokenTypeField" alignment="CENTER" layoutX="502.0" layoutY="359.0" prefHeight="26.0" prefWidth="228.0" style="-fx-border-color: grey;" stylesheets="@ManageVehicle.css">
+               <font>
+                  <Font name="Times New Roman" size="14.0" />
+               </font>
+            </TextField>
+            <Separator layoutY="64.0" prefHeight="5.0" prefWidth="779.0" />
+            <TextField fx:id="Vehicle_IDTextField" alignment="CENTER" layoutX="161.0" layoutY="20.0" prefHeight="28.0" prefWidth="278.0" promptText="Enter Vehicle ID/Reg No." style="-fx-background-radius: 50; -fx-background-color: white; -fx-border-color: grey; -fx-border-radius: 50;">
+               <font>
+                  <Font name="Times New Roman" size="15.0" />
+               </font>
+            </TextField>
+            <JFXButton fx:id="SearchButton" buttonType="RAISED" layoutX="514.0" layoutY="15.0" onAction="#SearchRecord" prefHeight="41.0" prefWidth="56.0" ripplerFill="#2a25d0" style="-fx-background-color: Transparent;" text=" ">
+               <graphic>
+                  <ImageView fitHeight="32.0" fitWidth="36.0" pickOnBounds="true">
+                     <image>
+                        <Image url="@../Pictures/search-icon(new).png" />
+                     </image>
+                  </ImageView>
+               </graphic>
+            </JFXButton>
+            <TextField fx:id="vehicleTypeField" alignment="CENTER" layoutX="173.0" layoutY="146.0" prefHeight="25.0" prefWidth="228.0" style="-fx-border-color: grey;" stylesheets="@ManageVehicle.css">
+               <font>
+                  <Font name="Times New Roman" size="14.0" />
+               </font>
+            </TextField>
+            <TextField fx:id="vehicleModelField" alignment="CENTER" layoutX="173.0" layoutY="210.0" prefHeight="25.0" prefWidth="228.0" style="-fx-border-color: grey;" stylesheets="@ManageVehicle.css">
+               <font>
+                  <Font name="Times New Roman" size="14.0" />
+               </font>
+            </TextField>
+            <TextField fx:id="registrationNumberField" alignment="CENTER" layoutX="173.0" layoutY="270.0" prefHeight="25.0" prefWidth="228.0" style="-fx-border-color: grey;" stylesheets="@ManageVehicle.css">
+               <font>
+                  <Font name="Times New Roman" size="14.0" />
+               </font>
+            </TextField>
+            <TextField fx:id="vehicleCapacityField" alignment="CENTER" layoutX="173.0" layoutY="325.0" prefHeight="26.0" prefWidth="228.0" style="-fx-border-color: grey;" stylesheets="@ManageVehicle.css">
+               <font>
+                  <Font name="Times New Roman" size="14.0" />
+               </font>
+            </TextField>
+            <TextField fx:id="vehicleOccupationField" alignment="CENTER" layoutX="173.0" layoutY="367.0" prefHeight="26.0" prefWidth="228.0" style="-fx-border-color: grey;" stylesheets="@ManageVehicle.css">
+               <font>
+                  <Font name="Times New Roman" size="14.0" />
+               </font>
+            </TextField>
+            <TextField fx:id="accidentalStatusField" alignment="CENTER" layoutX="173.0" layoutY="410.0" prefHeight="26.0" prefWidth="228.0" style="-fx-border-color: grey;" stylesheets="@ManageVehicle.css">
+               <font>
+                  <Font name="Times New Roman" size="14.0" />
+               </font>
+            </TextField>
+            <Label layoutX="72.0" layoutY="152.0" prefHeight="17.0" prefWidth="81.0" style="-fx-text-fill: white;" text="Vehicle Type">
+               <font>
+                  <Font name="Times New Roman" size="13.0" />
+               </font>
+            </Label>
+            <Label layoutX="72.0" layoutY="216.0" prefHeight="17.0" prefWidth="81.0" style="-fx-text-fill: white;" text="Vehicle Model">
+               <font>
+                  <Font name="Times New Roman" size="13.0" />
+               </font>
+            </Label>
+            <Label layoutX="49.0" layoutY="276.0" prefHeight="17.0" prefWidth="126.0" style="-fx-text-fill: white;" text="Vehicle Registration #">
+               <font>
+                  <Font name="Times New Roman" size="13.0" />
+               </font>
+            </Label>
+            <Label layoutX="63.0" layoutY="331.0" prefHeight="17.0" prefWidth="98.0" style="-fx-text-fill: white;" text="Vehicle capacity">
+               <font>
+                  <Font name="Times New Roman" size="13.0" />
+               </font>
+            </Label>
+            <Label layoutX="49.0" layoutY="373.0" prefHeight="17.0" prefWidth="115.0" style="-fx-text-fill: white;" text="Vehicle Occupation">
+               <font>
+                  <Font name="Times New Roman" size="13.0" />
+               </font>
+            </Label>
+            <Label layoutX="64.0" layoutY="416.0" prefHeight="17.0" prefWidth="98.0" style="-fx-text-fill: white;" text="Accidental status">
+               <font>
+                  <Font name="Times New Roman" size="13.0" />
+               </font>
+            </Label>
+            <Label layoutX="64.0" layoutY="468.0" prefHeight="17.0" prefWidth="98.0" style="-fx-text-fill: white;" text="Fuel efficiency">
+               <font>
+                  <Font name="Times New Roman" size="13.0" />
+               </font>
+            </Label>
+            <Label layoutX="500.0" layoutY="121.0" prefHeight="17.0" prefWidth="59.0" style="-fx-text-fill: white;" text="Driver ID">
+               <font>
+                  <Font name="Times New Roman" size="13.0" />
+               </font>
+            </Label>
+            <Label layoutX="500.0" layoutY="186.0" prefHeight="17.0" prefWidth="59.0" style="-fx-text-fill: white;" text="Route ID">
+               <font>
+                  <Font name="Times New Roman" size="13.0" />
+               </font>
+            </Label>
+            <Label layoutX="502.0" layoutY="286.0" prefHeight="17.0" prefWidth="59.0" style="-fx-text-fill: white;" text="Token No.">
+               <font>
+                  <Font name="Times New Roman" size="13.0" />
+               </font>
+            </Label>
+            <Label layoutX="505.0" layoutY="338.0" prefHeight="17.0" prefWidth="73.0" style="-fx-text-fill: white;" text="Token Type">
+               <font>
+                  <Font name="Times New Roman" size="13.0" />
+               </font>
+            </Label>
+            <Label layoutX="500.0" layoutY="400.0" prefHeight="17.0" prefWidth="98.0" style="-fx-text-fill: white;" text="Token Issue date">
+               <font>
+                  <Font name="Times New Roman" size="13.0" />
+               </font>
+            </Label>
+            <Label layoutX="500.0" layoutY="451.0" prefHeight="17.0" prefWidth="98.0" style="-fx-text-fill: white;" text="Token Expiry date">
+               <font>
+                  <Font name="Times New Roman" size="13.0" />
+               </font>
+            </Label>
+            <CheckBox fx:id="tokenStatusCheckbox" alignment="CENTER" layoutX="501.0" layoutY="251.0" mnemonicParsing="false" stylesheets="@ManageVehicle.css" text="Token status" textFill="WHITE">
+               <font>
+                  <Font name="Times New Roman" size="14.0" />
+               </font>
+            </CheckBox>
+            <DatePicker fx:id="tokenIssueDateField" layoutX="502.0" layoutY="419.0" prefHeight="25.0" prefWidth="228.0" promptText="Token Issue date" />
+            <DatePicker fx:id="tokenExpiryDateField" layoutX="502.0" layoutY="470.0" prefHeight="25.0" prefWidth="228.0" promptText="Token Expiry date" />
+         </children>
+      </Pane>
+      <Label alignment="CENTER" layoutX="289.0" layoutY="3.0" prefHeight="31.0" prefWidth="358.0" style="-fx-background-color: #948454; -fx-background-radius: 10px; -fx-border-color: white; -fx-border-radius: 10px;" stylesheets="@ManageVehicle.css" text="Update Vehicle Record " textFill="WHITE">
+         <font>
+            <Font name="Broadway" size="25.0" />
+         </font>
+      </Label>
+   </children>
+</AnchorPane>

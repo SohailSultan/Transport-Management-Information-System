@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.DatePicker?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane fx:id="contentPane" prefHeight="600.0" prefWidth="956.0" stylesheets="@../ManageVehicle/ManageVehicle.css" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="ManageDriver.AddDriver">
+   <children>
+      <Pane layoutX="87.0" layoutY="49.0" prefHeight="539.0" prefWidth="779.0" style="-fx-border-color: white; -fx-border-radius: 10px;">
+         <children>
+            <Button fx:id="SaveButton" layoutX="318.0" layoutY="492.0" mnemonicParsing="false" onAction="#SaveRecord" prefHeight="27.0" prefWidth="143.0" style="-fx-background-color: #642938; -fx-border-color: white; -fx-text-fill: white; -fx-background-radius: 10; -fx-border-radius: 10;" text="Save Record" />
+            <TextField fx:id="fatherNameTextField" alignment="CENTER" layoutX="112.0" layoutY="134.0" prefHeight="29.0" prefWidth="212.0" promptText="Father Name">
+               <font>
+                  <Font name="Times New Roman" size="16.0" />
+               </font>
+            </TextField>
+            <TextField fx:id="idCardTextField" alignment="CENTER" layoutX="112.0" layoutY="301.0" prefHeight="29.0" prefWidth="212.0" promptText="CNIC No.">
+               <font>
+                  <Font name="Times New Roman" size="16.0" />
+               </font>
+            </TextField>
+            <TextField fx:id="LicenseNoTextField" alignment="CENTER" layoutX="114.0" layoutY="375.0" prefHeight="29.0" prefWidth="212.0" promptText="Driving License  No.">
+               <font>
+                  <Font name="Times New Roman" size="16.0" />
+               </font>
+            </TextField>
+            <TextField fx:id="nameTextField" alignment="CENTER" layoutX="113.0" layoutY="44.0" prefHeight="29.0" prefWidth="212.0" promptText="Name">
+               <font>
+                  <Font name="Times New Roman" size="16.0" />
+               </font>
+            </TextField>
+            <TextField fx:id="contactTextField" alignment="CENTER" layoutX="453.0" layoutY="216.0" prefHeight="29.0" prefWidth="212.0" promptText="Contact No.">
+               <font>
+                  <Font name="Times New Roman" size="16.0" />
+               </font>
+            </TextField>
+            <TextField fx:id="salaryTextField" alignment="CENTER" layoutX="452.0" layoutY="296.0" prefHeight="29.0" prefWidth="212.0" promptText="Salary">
+               <font>
+                  <Font name="Times New Roman" size="16.0" />
+               </font>
+            </TextField>
+            <TextField fx:id="Bus_IDTextField" alignment="CENTER" layoutX="454.0" layoutY="373.0" prefHeight="29.0" prefWidth="212.0" promptText="Vehicle Reg #">
+               <font>
+                  <Font name="Times New Roman" size="16.0" />
+               </font>
+            </TextField>
+            <Label layoutX="113.0" layoutY="20.0" text="Name" textFill="WHITE">
+               <font>
+                  <Font name="Sitka Small" size="15.0" />
+               </font>
+            </Label>
+            <Label layoutX="112.0" layoutY="109.0" text="Father Name" textFill="WHITE">
+               <font>
+                  <Font name="Sitka Small" size="15.0" />
+               </font>
+            </Label>
+            <Label layoutX="112.0" layoutY="274.0" text="CNIC #" textFill="WHITE">
+               <font>
+                  <Font name="Sitka Small" size="15.0" />
+               </font>
+            </Label>
+            <Label layoutX="113.0" layoutY="350.0" text="License #" textFill="WHITE">
+               <font>
+                  <Font name="Sitka Small" size="15.0" />
+               </font>
+            </Label>
+            <Label layoutX="114.0" layoutY="420.0" text="Licenese Expiry Date" textFill="WHITE">
+               <font>
+                  <Font name="Sitka Small" size="15.0" />
+               </font>
+            </Label>
+            <Label layoutX="453.0" layoutY="191.0" text="Contact #" textFill="WHITE">
+               <font>
+                  <Font name="Sitka Small" size="15.0" />
+               </font>
+            </Label>
+            <Label layoutX="452.0" layoutY="272.0" text="Salary" textFill="WHITE">
+               <font>
+                  <Font name="Sitka Small" size="15.0" />
+               </font>
+            </Label>
+            <Label layoutX="455.0" layoutY="349.0" text="Vehicle Reg No." textFill="WHITE">
+               <font>
+                  <Font name="Sitka Small" size="15.0" />
+               </font>
+            </Label>
+            <Label layoutX="116.0" layoutY="192.0" text="Date of Birth" textFill="WHITE">
+               <font>
+                  <Font name="Sitka Small" size="15.0" />
+               </font>
+            </Label>
+            <DatePicker fx:id="DoBTextField" layoutX="112.0" layoutY="224.0" prefHeight="25.0" prefWidth="212.0" promptText="Date of Birth" />
+            <DatePicker fx:id="LicenseExpDateTextField" layoutX="114.0" layoutY="447.0" prefHeight="25.0" prefWidth="212.0" promptText="License Expiry Date" />
+            <Label layoutX="454.0" layoutY="18.0" text="Joining Date" textFill="WHITE">
+               <font>
+                  <Font name="Sitka Small" size="15.0" />
+               </font>
+            </Label>
+            <DatePicker fx:id="JoinDateTextField" layoutX="454.0" layoutY="45.0" prefHeight="25.0" prefWidth="212.0" promptText="Joining Date" />
+            <DatePicker fx:id="LeavingDateTextField" layoutX="454.0" layoutY="136.0" prefHeight="25.0" prefWidth="212.0" promptText="Leaving Date" />
+            <Label layoutX="453.0" layoutY="109.0" text="Leaving Date" textFill="WHITE">
+               <font>
+                  <Font name="Sitka Small" size="15.0" />
+               </font>
+            </Label>
+         </children>
+      </Pane>
+      <Label alignment="CENTER" layoutX="315.0" layoutY="14.0" prefHeight="29.0" prefWidth="260.0" style="-fx-background-color: #642938; -fx-background-radius: 10px; -fx-border-color: white; -fx-border-radius: 10px;" stylesheets="@../ManageVehicle/ManageVehicle.css" text="Add new Driver" textFill="WHITE">
+         <font>
+            <Font name="Broadway" size="25.0" />
+         </font>
+      </Label>
+   </children>
+</AnchorPane>

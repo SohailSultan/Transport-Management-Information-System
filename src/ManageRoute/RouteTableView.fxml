@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ScrollPane?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane fx:id="contentPane" prefHeight="600.0" prefWidth="947.0" stylesheets="@../ManageVehicle/ManageVehicle.css" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="ManageRoute.RouteTableController">
+   <children>
+      <ScrollPane layoutX="12.0" layoutY="75.0" prefHeight="484.0" prefWidth="924.0">
+         <content>
+            <TableView fx:id="RouteTable" editable="true" prefHeight="506.0" prefWidth="1055.0" style="-fx-background-color: silver;" tableMenuButtonVisible="true">
+               <columns>
+                  <TableColumn fx:id="RouteIDCol" prefWidth="142.0" text="Route ID" />
+                  <TableColumn fx:id="RouteNameCol" prefWidth="123.0" text="Route name" />
+                  <TableColumn fx:id="StartingPointCol" prefWidth="100.0" text="Starting Point Name" />
+                  <TableColumn fx:id="EndingPointCol" prefWidth="115.0" text="Ending Point Name" />
+                  <TableColumn fx:id="DepartTimeCol" prefWidth="70.0" text="Departure Time(University)" />
+                  <TableColumn fx:id="ArrivalTimeCol" prefWidth="93.0" text="Arrival Time(University)" />
+                  <TableColumn fx:id="FairsCol" text="Fairs Per Paasenger" />
+                  <TableColumn fx:id="OccupationCol" text="No of Occupation" />
+                  <TableColumn fx:id="VehicleIDCol" prefWidth="100.0" text="Vehicle Reg.. No" />
+                  <TableColumn fx:id="DriverIDCol" prefWidth="110.0" text="Driver ID" />
+                  <TableColumn fx:id="ConductorIDCol" prefWidth="142.0" text="Conductor ID" />
+                  <TableColumn fx:id="StopsNameCol" prefWidth="142.0" text="Routes Stops Name" />
+               </columns>
+            </TableView>
+         </content>
+      </ScrollPane>
+      <Label layoutX="359.0" layoutY="28.0" prefHeight="29.0" prefWidth="260.0" stylesheets="@../ManageVehicle/ManageVehicle.css" text="Routes List" textFill="WHITE">
+         <font>
+            <Font name="Broadway" size="25.0" />
+         </font>
+      </Label>
+      <TextField fx:id="searchTextField" layoutX="600.0" layoutY="30.0" prefHeight="25.0" prefWidth="260.0" promptText="Enter ID/Name/Vehicle Regno." />
+   </children>
+</AnchorPane>

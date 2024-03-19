@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import javafx.scene.control.ChoiceBox?>
+<?import javafx.scene.control.DatePicker?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ScrollPane?>
+<?import javafx.scene.control.Separator?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+
+<Pane fx:id="screen_pane" prefHeight="587.0" prefWidth="939.0" style="-fx-border-width: 1; -fx-border-color: white;" stylesheets="@../../Dashboard/Dashboard.css" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="ManageExpense.Vehicle_Tokens.ManageTokenController">
+   <children>
+      <Label layoutX="415.0" layoutY="22.0" prefHeight="34.0" prefWidth="371.0" stylesheets="@../../ManageVehicle/ManageVehicle.css" text=" Vehicle Token EXPENSE " textFill="WHITE">
+         <font>
+            <Font name="Algerian" size="30.0" />
+         </font>
+      </Label>
+      <ImageView fitHeight="51.0" fitWidth="93.0" layoutX="289.0" layoutY="14.0" pickOnBounds="true">
+         <image>
+            <Image url="@../../Pictures/token.png" />
+         </image>
+      </ImageView>
+      <JFXButton fx:id="InsertButton" alignment="CENTER" buttonType="RAISED" contentDisplay="CENTER" layoutX="74.0" layoutY="535.0" onAction="#Insert_FuelExpense" opacity="0.75" prefHeight="30.0" prefWidth="100.0" ripplerFill="WHITE" style="-fx-background-color: #01579B; -fx-border-color: white;" text="Insert" textFill="WHITE">
+         <font>
+            <Font name="Eras Demi ITC" size="15.0" />
+         </font>
+      </JFXButton>
+      <JFXButton fx:id="UpdateButton" alignment="CENTER" buttonType="RAISED" contentDisplay="CENTER" layoutX="253.0" layoutY="535.0" onAction="#Update_FuelExpense" opacity="0.75" prefHeight="30.0" prefWidth="100.0" ripplerFill="WHITE" style="-fx-background-color: #D500F9; -fx-border-color: white;" text="Update" textFill="WHITE">
+         <font>
+            <Font name="Eras Demi ITC" size="15.0" />
+         </font>
+      </JFXButton>
+      <JFXButton fx:id="DeleteButton" alignment="CENTER" buttonType="RAISED" contentDisplay="CENTER" layoutX="420.0" layoutY="535.0" onAction="#Delete_FuelExpense" opacity="0.75" prefHeight="30.0" prefWidth="100.0" ripplerFill="WHITE" style="-fx-background-color: RED; -fx-border-color: white;" text="Delete" textFill="WHITE">
+         <font>
+            <Font name="Eras Demi ITC" size="15.0" />
+         </font>
+      </JFXButton>
+      <Separator layoutY="514.0" prefHeight="0.0" prefWidth="939.0" />
+      <Separator layoutY="63.0" prefHeight="0.0" prefWidth="939.0" />
+      <AnchorPane fx:id="InsertPane" layoutY="66.0" prefHeight="447.0" prefWidth="939.0" style="-fx-background-color: WHITE;">
+         <children>
+            <ScrollPane layoutY="30.0" prefHeight="215.0" prefWidth="939.0">
+               <content>
+                  <TableView fx:id="Token_InsuranceExpenseTable" editable="true" prefHeight="203.0" prefWidth="939.0" style="-fx-background-color: silver;" tableMenuButtonVisible="true">
+                     <columns>
+                        <TableColumn fx:id="ExpIDCol" prefWidth="120.0" text="Expense ID" />
+                        <TableColumn fx:id="VRegCol" prefWidth="120.0" text="Vehicle Reg No." />
+                        <TableColumn fx:id="ExpTypeCol" prefWidth="127.0" text="Token Type" />
+                        <TableColumn fx:id="AmountCol" prefWidth="127.0" text="Amount" />
+                        <TableColumn fx:id="PurDateCol" prefWidth="98.0" text="Purcahse Date" />
+                        <TableColumn fx:id="ExpDateCol" prefWidth="98.0" text="Expiry Date" />
+                        <TableColumn fx:id="PaymentCol" prefWidth="127.0" text="Payment Method" />
+                        <TableColumn fx:id="RemarksCol" prefWidth="170.0" text="Remarks" />
+                     </columns>
+                  </TableView>
+               </content>
+            </ScrollPane>
+            <TextField fx:id="searchTextField" layoutX="345.0" layoutY="2.0" prefHeight="25.0" prefWidth="249.0" promptText="Enter ID/ Reg No/ Type" />
+            <TextField fx:id="IDTextfield" editable="false" layoutX="38.0" layoutY="281.0" prefHeight="26.0" prefWidth="165.0">
+               <font>
+                  <Font name="Times New Roman" size="14.0" />
+               </font>
+            </TextField>
+            <Label layoutX="38.0" layoutY="259.0" text="Expense ID" />
+            <TextField fx:id="VRegNoTextfield" layoutX="348.0" layoutY="279.0" prefHeight="26.0" prefWidth="165.0">
+               <font>
+                  <Font name="Times New Roman" size="14.0" />
+               </font>
+            </TextField>
+            <TextField fx:id="AmountTextfield" layoutX="39.0" layoutY="353.0" prefHeight="26.0" prefWidth="165.0">
+               <font>
+                  <Font name="Times New Roman" size="14.0" />
+               </font>
+            </TextField>
+            <Label layoutX="348.0" layoutY="257.0" text="Vehicle Reg No." />
+            <Label layoutX="670.0" layoutY="257.0" text="Token Type" />
+            <Label layoutX="37.0" layoutY="331.0" text="Amount(Rs)" />
+            <DatePicker fx:id="PurchseDate" layoutX="348.0" layoutY="353.0" prefHeight="26.0" prefWidth="165.0" promptText="Purchase Date" />
+            <TextField fx:id="PMethodTextfield" layoutX="39.0" layoutY="418.0" prefHeight="26.0" prefWidth="165.0">
+               <font>
+                  <Font name="Times New Roman" size="14.0" />
+               </font>
+            </TextField>
+            <Label layoutX="37.0" layoutY="396.0" text="Payment Method" />
+            <TextField fx:id="RemarksTextfield" layoutX="350.0" layoutY="414.0" prefHeight="26.0" prefWidth="165.0">
+               <font>
+                  <Font name="Times New Roman" size="14.0" />
+               </font>
+            </TextField>
+            <Label layoutX="347.0" layoutY="396.0" text="Remarks (optional)" />
+            <DatePicker fx:id="ExpiryDate" layoutX="670.0" layoutY="353.0" prefHeight="26.0" prefWidth="165.0" promptText="Expiry Date" />
+            <Label layoutX="355.0" layoutY="331.0" text="Purchse Date" />
+            <Label layoutX="671.0" layoutY="331.0" text="Expiry Date" />
+            <ChoiceBox fx:id="ExpenseType" layoutX="667.0" layoutY="282.0" prefHeight="25.0" prefWidth="165.0" style="-fx-background-color: Transparent; -fx-border-color: silver; -fx-border-radius: 3px;" />
+         </children>
+      </AnchorPane>
+      <JFXButton fx:id="ClearButton" alignment="CENTER" buttonType="RAISED" contentDisplay="CENTER" layoutX="673.0" layoutY="531.0" onAction="#ClearFields" opacity="0.75" prefHeight="34.0" prefWidth="70.0" ripplerFill="WHITE" style="-fx-background-color: Black; -fx-border-color: white;" text="Clear" textFill="WHITE">
+         <font>
+            <Font name="Eras Demi ITC" size="15.0" />
+         </font>
+      </JFXButton>
+      <JFXButton fx:id="RefreshButton" alignment="CENTER" buttonType="RAISED" contentDisplay="CENTER" layoutX="794.0" layoutY="531.0" onAction="#Refresh" opacity="0.75" prefHeight="34.0" prefWidth="70.0" ripplerFill="WHITE" style="-fx-background-color: orange; -fx-border-color: white;" text="Refresh" textFill="WHITE" wrapText="true">
+         <font>
+            <Font name="Eras Demi ITC" size="14.0" />
+         </font>
+      </JFXButton>
+   </children>
+</Pane>

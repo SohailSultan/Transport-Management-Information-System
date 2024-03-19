@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ScrollPane?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane fx:id="contentPane" prefHeight="600.0" prefWidth="956.0" stylesheets="@../ManageVehicle/ManageVehicle.css" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="ManageDriver.DriverTableController">
+   <children>
+      <ScrollPane layoutX="45.0" layoutY="75.0" prefHeight="484.0" prefWidth="889.0">
+         <content>
+            <TableView fx:id="DriverTable" editable="true" prefHeight="506.0" prefWidth="889.0" tableMenuButtonVisible="true">
+               <columns>
+                  <TableColumn fx:id="IDCol" prefWidth="57.0" text="Driver ID" />
+                  <TableColumn fx:id="NameCol" prefWidth="112.0" text="Driver name" />
+                  <TableColumn fx:id="FNameCol" prefWidth="112.0" text="Father Name" />
+                  <TableColumn fx:id="DoBCol" prefWidth="107.0" text="Date of birth" />
+                  <TableColumn fx:id="CNICCol" prefWidth="100.0" text="CNIC No." />
+                  <TableColumn fx:id="ContactCol" prefWidth="100.0" text="Contact No." />
+                  <TableColumn fx:id="LicenseNoCol" prefWidth="100.0" text="License Number" />
+                  <TableColumn fx:id="L_ExpiryDateCol" prefWidth="100.0" text="License Expiry Date" />
+                  <TableColumn fx:id="SalaryCol" prefWidth="100.0" text="Salary" />
+                  <TableColumn fx:id="RouteIDCol" prefWidth="57.0" text="Route No." />
+                  <TableColumn fx:id="VehicleIDCol" prefWidth="57.0" text="Vehicle Reg #" />
+               </columns>
+            </TableView>
+         </content>
+      </ScrollPane>
+      <Label layoutX="359.0" layoutY="28.0" prefHeight="29.0" prefWidth="260.0" stylesheets="@../ManageVehicle/ManageVehicle.css" text="Drivers List" textFill="WHITE">
+         <font>
+            <Font name="Broadway" size="25.0" />
+         </font>
+      </Label>
+      <TextField fx:id="searchTextField" layoutX="604.0" layoutY="30.0" prefHeight="25.0" prefWidth="260.0" promptText="Enter ID/Name/Father/CNIC" />
+   </children>
+</AnchorPane>

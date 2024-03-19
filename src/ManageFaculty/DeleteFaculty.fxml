@@ -1,0 +1,184 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.Separator?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.shape.CubicCurve?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane fx:id="contentPane" prefHeight="600.0" prefWidth="947.0" stylesheets="@../ManageVehicle/ManageVehicle.css" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="ManageFaculty.DeleteFacultyController">
+   <children>
+      <Pane fx:id="DataPane" layoutX="84.0" layoutY="55.0" prefHeight="531.0" prefWidth="779.0" style="-fx-border-color: white; -fx-background-radius: 20; -fx-border-radius: 20;" stylesheets="@../ManageVehicle/ManageVehicle.css">
+         <children>
+            <Button fx:id="DeleteButton" layoutX="318.0" layoutY="494.0" mnemonicParsing="false" onAction="#DeleteRecord" prefHeight="31.0" prefWidth="143.0" style="-fx-background-color: #642938; -fx-border-color: white; -fx-text-fill: white; -fx-background-radius: 10; -fx-border-radius: 10;" text="Delete Record" />
+            <TextField fx:id="facultyTypeTextField" alignment="CENTER" editable="false" layoutX="114.0" layoutY="108.0" opacity="0.89" prefHeight="26.0" prefWidth="234.0" styleClass="VehicleTextfields2">
+               <font>
+                  <Font name="Times New Roman" size="14.0" />
+               </font>
+            </TextField>
+            <TextField fx:id="nameTextField" alignment="CENTER" editable="false" layoutX="114.0" layoutY="169.0" opacity="0.89" prefHeight="26.0" prefWidth="234.0" styleClass="VehicleTextfields2">
+               <font>
+                  <Font name="Times New Roman" size="14.0" />
+               </font>
+            </TextField>
+            <TextField fx:id="fatherNameTextField" alignment="CENTER" editable="false" layoutX="114.0" layoutY="222.0" opacity="0.89" prefHeight="26.0" prefWidth="234.0" styleClass="VehicleTextfields2">
+               <font>
+                  <Font name="Times New Roman" size="14.0" />
+               </font>
+            </TextField>
+            <TextField fx:id="dobTextField" alignment="CENTER" editable="false" layoutX="112.0" layoutY="384.0" opacity="0.89" prefHeight="26.0" prefWidth="234.0" styleClass="VehicleTextfields2">
+               <font>
+                  <Font name="Times New Roman" size="14.0" />
+               </font>
+            </TextField>
+            <TextField fx:id="designationTextField" alignment="CENTER" editable="false" layoutX="431.0" layoutY="108.0" opacity="0.89" prefHeight="26.0" prefWidth="234.0" styleClass="VehicleTextfields2">
+               <font>
+                  <Font name="Times New Roman" size="14.0" />
+               </font>
+            </TextField>
+            <TextField fx:id="departmentTextField" alignment="CENTER" editable="false" layoutX="433.0" layoutY="169.0" opacity="0.89" prefHeight="26.0" prefWidth="234.0" styleClass="VehicleTextfields2">
+               <font>
+                  <Font name="Times New Roman" size="14.0" />
+               </font>
+            </TextField>
+            <TextField fx:id="contactTextField" alignment="CENTER" editable="false" layoutX="114.0" layoutY="273.0" opacity="0.89" prefHeight="26.0" prefWidth="234.0" styleClass="VehicleTextfields2">
+               <font>
+                  <Font name="Times New Roman" size="14.0" />
+               </font>
+            </TextField>
+            <TextField fx:id="cnicTextField" alignment="CENTER" editable="false" layoutX="112.0" layoutY="443.0" opacity="0.89" prefHeight="26.0" prefWidth="234.0" styleClass="VehicleTextfields2">
+               <font>
+                  <Font name="Times New Roman" size="14.0" />
+               </font>
+            </TextField>
+            <TextField fx:id="bankAccountTextField" alignment="CENTER" editable="false" layoutX="433.0" layoutY="220.0" opacity="0.89" prefHeight="26.0" prefWidth="234.0" styleClass="VehicleTextfields2">
+               <font>
+                  <Font name="Times New Roman" size="14.0" />
+               </font>
+            </TextField>
+            <TextField fx:id="routeIdTextField" alignment="CENTER" editable="false" layoutX="431.0" layoutY="328.0" opacity="0.89" prefHeight="26.0" prefWidth="234.0" styleClass="VehicleTextfields2">
+               <font>
+                  <Font name="Times New Roman" size="14.0" />
+               </font>
+            </TextField>
+            <TextField fx:id="busIdTextField" alignment="CENTER" editable="false" layoutX="431.0" layoutY="384.0" opacity="0.89" prefHeight="26.0" prefWidth="234.0" styleClass="VehicleTextfields2">
+               <font>
+                  <Font name="Times New Roman" size="14.0" />
+               </font>
+            </TextField>
+            <TextField fx:id="salaryTextField" alignment="CENTER" editable="false" layoutX="433.0" layoutY="272.0" opacity="0.89" prefHeight="26.0" prefWidth="234.0" styleClass="VehicleTextfields2">
+               <font>
+                  <Font name="Times New Roman" size="14.0" />
+               </font>
+            </TextField>
+            <TextField fx:id="addressTextField" alignment="CENTER" editable="false" layoutX="112.0" layoutY="328.0" opacity="0.89" prefHeight="26.0" prefWidth="234.0" styleClass="VehicleTextfields2">
+               <font>
+                  <Font name="Times New Roman" size="14.0" />
+               </font>
+            </TextField>
+            <TextField fx:id="FeeStatusTextField" alignment="CENTER" editable="false" layoutX="431.0" layoutY="443.0" opacity="0.89" prefHeight="26.0" prefWidth="234.0" styleClass="VehicleTextfields2">
+               <font>
+                  <Font name="Times New Roman" size="14.0" />
+               </font>
+            </TextField>
+            <Separator layoutY="70.0" prefHeight="9.0" prefWidth="779.0" />
+            <TextField fx:id="FacultyIDTextField" alignment="CENTER" layoutX="182.0" layoutY="30.0" prefHeight="28.0" prefWidth="278.0" promptText="Enter Faculty ID/CNIC" style="-fx-background-radius: 50;">
+               <font>
+                  <Font name="Times New Roman" size="15.0" />
+               </font>
+            </TextField>
+            <Button fx:id="SearchButton" layoutX="496.0" layoutY="22.0" mnemonicParsing="false" onAction="#SearchRecord" prefHeight="44.0" prefWidth="50.0" style="-fx-background-radius: 100%; -fx-background-color: Transparent;">
+               <graphic>
+                  <ImageView fitHeight="32.0" fitWidth="36.0" pickOnBounds="true">
+                     <image>
+                        <Image url="@../Pictures/search-icon(new).png" />
+                     </image>
+                  </ImageView>
+               </graphic>
+            </Button>
+            <Label layoutX="114.0" layoutY="87.0" prefHeight="19.0" prefWidth="97.0" text="Faculty Type" textFill="WHITE">
+               <font>
+                  <Font name="Sitka Small" size="12.0" />
+               </font>
+            </Label>
+            <Label layoutX="114.0" layoutY="145.0" prefHeight="19.0" prefWidth="97.0" text="Name" textFill="WHITE">
+               <font>
+                  <Font name="Sitka Small" size="12.0" />
+               </font>
+            </Label>
+            <Label layoutX="114.0" layoutY="201.0" prefHeight="19.0" prefWidth="97.0" text="Father Name" textFill="WHITE">
+               <font>
+                  <Font name="Sitka Small" size="12.0" />
+               </font>
+            </Label>
+            <Label layoutX="114.0" layoutY="256.0" prefHeight="19.0" prefWidth="97.0" text="Contact" textFill="WHITE">
+               <font>
+                  <Font name="Sitka Small" size="12.0" />
+               </font>
+            </Label>
+            <Label layoutX="114.0" layoutY="307.0" prefHeight="19.0" prefWidth="97.0" text="Address" textFill="WHITE">
+               <font>
+                  <Font name="Sitka Small" size="12.0" />
+               </font>
+            </Label>
+            <Label layoutX="114.0" layoutY="363.0" prefHeight="19.0" prefWidth="97.0" text="Date of Birth" textFill="WHITE">
+               <font>
+                  <Font name="Sitka Small" size="12.0" />
+               </font>
+            </Label>
+            <Label layoutX="114.0" layoutY="422.0" prefHeight="19.0" prefWidth="97.0" text="CNIC ID" textFill="WHITE">
+               <font>
+                  <Font name="Sitka Small" size="12.0" />
+               </font>
+            </Label>
+            <Label layoutX="433.0" layoutY="87.0" prefHeight="19.0" prefWidth="97.0" text="Designation" textFill="WHITE">
+               <font>
+                  <Font name="Sitka Small" size="12.0" />
+               </font>
+            </Label>
+            <Label layoutX="433.0" layoutY="154.0" prefHeight="19.0" prefWidth="80.0" text="Department" textFill="WHITE">
+               <font>
+                  <Font name="Sitka Small" size="12.0" />
+               </font>
+            </Label>
+            <Label layoutX="438.0" layoutY="201.0" prefHeight="19.0" prefWidth="116.0" text="Bank Account No." textFill="WHITE">
+               <font>
+                  <Font name="Sitka Small" size="12.0" />
+               </font>
+            </Label>
+            <Label layoutX="433.0" layoutY="256.0" prefHeight="19.0" prefWidth="97.0" text="Salary" textFill="WHITE">
+               <font>
+                  <Font name="Sitka Small" size="12.0" />
+               </font>
+            </Label>
+            <Label layoutX="433.0" layoutY="307.0" prefHeight="19.0" prefWidth="97.0" text="Route ID" textFill="WHITE">
+               <font>
+                  <Font name="Sitka Small" size="12.0" />
+               </font>
+            </Label>
+            <Label layoutX="433.0" layoutY="363.0" prefHeight="19.0" prefWidth="97.0" text="Vehicle ID" textFill="WHITE">
+               <font>
+                  <Font name="Sitka Small" size="12.0" />
+               </font>
+            </Label>
+            <Label layoutX="433.0" layoutY="422.0" prefHeight="19.0" prefWidth="97.0" text="Fee Status" textFill="WHITE">
+               <font>
+                  <Font name="Sitka Small" size="12.0" />
+               </font>
+            </Label>
+            <CubicCurve controlX1="178.0" controlX2="79.0" controlY1="-29.0" controlY2="24.0" endX="126.0" endY="309.0" fill="SILVER" layoutX="614.0" layoutY="213.0" startX="117.0" startY="-121.0" stroke="#ddddc2" />
+            <CubicCurve controlX1="54.0" controlX2="175.0" controlY1="-71.0" controlY2="4.0" endX="126.0" endY="309.0" fill="SILVER" layoutX="-83.0" layoutY="214.0" startX="117.0" startY="-121.0" stroke="SILVER" />
+         </children>
+      </Pane>
+      <Label alignment="CENTER" layoutX="313.0" layoutY="14.0" prefHeight="31.0" prefWidth="321.0" style="-fx-background-radius: 10px; -fx-border-color: white; -fx-border-radius: 10px;" stylesheets="@../ManageVehicle/ManageVehicle.css" text="Delete Faculty Record" textFill="WHITE">
+         <font>
+            <Font name="Broadway" size="25.0" />
+         </font>
+      </Label>
+   </children>
+</AnchorPane>

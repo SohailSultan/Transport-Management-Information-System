@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ScrollPane?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.control.cell.PropertyValueFactory?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane fx:id="contentPane" prefHeight="630.0" prefWidth="947.0" stylesheets="@ManageVehicle.css" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="ManageVehicle.VehicleTableController">
+   <children>
+      <Label layoutX="359.0" layoutY="28.0" prefHeight="29.0" prefWidth="260.0" stylesheets="@ManageVehicle.css" text=" Vehicles List" textFill="WHITE">
+         <font>
+            <Font name="Broadway" size="25.0" />
+         </font>
+      </Label>
+      <ScrollPane hbarPolicy="ALWAYS" layoutX="3.0" layoutY="83.0" prefHeight="510.0" prefWidth="941.0" vbarPolicy="NEVER">
+         <content>
+            <TableView fx:id="vehicleTableView" prefHeight="594.0" prefWidth="1060.0" tableMenuButtonVisible="true">
+               <columns>
+                  <TableColumn fx:id="vehicleIdColumn" prefWidth="50.0" text="ID">
+                     <cellValueFactory>
+                        <PropertyValueFactory property="vehicleId" />
+                     </cellValueFactory>
+                  </TableColumn>
+                  <TableColumn fx:id="vehicleTypeColumn" prefWidth="100.0" text="Type">
+                     <cellValueFactory>
+                        <PropertyValueFactory property="vehicleType" />
+                     </cellValueFactory>
+                  </TableColumn>
+                  <TableColumn fx:id="vehicleModelColumn" prefWidth="100.0" text="Model">
+                     <cellValueFactory>
+                        <PropertyValueFactory property="vehicleModel" />
+                     </cellValueFactory>
+                  </TableColumn>
+                  <TableColumn fx:id="registrationNumberColumn" prefWidth="131.0" text="Registration Number">
+                     <cellValueFactory>
+                        <PropertyValueFactory property="registrationNumber" />
+                     </cellValueFactory>
+                  </TableColumn>
+                  <TableColumn fx:id="vehicleCapacityColumn" prefWidth="80.0" text="Capacity">
+                     <cellValueFactory>
+                        <PropertyValueFactory property="vehicleCapacity" />
+                     </cellValueFactory>
+                  </TableColumn>
+                  <TableColumn fx:id="vehicleOccupationColumn" prefWidth="100.0" text="Occupation">
+                     <cellValueFactory>
+                        <PropertyValueFactory property="vehicleOccupation" />
+                     </cellValueFactory>
+                  </TableColumn>
+                  <TableColumn fx:id="accidentalStatusColumn" prefWidth="120.0" text="Accidental Status">
+                     <cellValueFactory>
+                        <PropertyValueFactory property="accidentalStatus" />
+                     </cellValueFactory>
+                  </TableColumn>
+                  <TableColumn fx:id="fuelEfficiencyColumn" prefWidth="100.0" text="Fuel Efficiency">
+                     <cellValueFactory>
+                        <PropertyValueFactory property="fuelEfficiency" />
+                     </cellValueFactory>
+                  </TableColumn>
+                  <TableColumn fx:id="driverIdColumn" prefWidth="80.0" text="Driver ID">
+                     <cellValueFactory>
+                        <PropertyValueFactory property="driverId" />
+                     </cellValueFactory>
+                  </TableColumn>
+                  <TableColumn fx:id="routeIdColumn" prefWidth="80.0" text="Route No">
+                     <cellValueFactory>
+                        <PropertyValueFactory property="routeId" />
+                     </cellValueFactory>
+                  </TableColumn>
+                  <TableColumn fx:id="tokenStatusColumn" prefWidth="100.0" text="Token Status">
+                     <cellValueFactory>
+                        <PropertyValueFactory property="tokenStatus" />
+                     </cellValueFactory>
+                  </TableColumn>
+                  <TableColumn fx:id="tokenNumberColumn" prefWidth="100.0" text="Token Number">
+                     <cellValueFactory>
+                        <PropertyValueFactory property="tokenNumber" />
+                     </cellValueFactory>
+                  </TableColumn>
+                  <TableColumn fx:id="tokenTypeColumn" prefWidth="100.0" text="Token Type">
+                     <cellValueFactory>
+                        <PropertyValueFactory property="tokenType" />
+                     </cellValueFactory>
+                  </TableColumn>
+                  <TableColumn fx:id="tokenIssueDateColumn" prefWidth="120.0" text="Token Issue Date">
+                     <cellValueFactory>
+                        <PropertyValueFactory property="tokenIssueDate" />
+                     </cellValueFactory>
+                  </TableColumn>
+                  <TableColumn fx:id="tokenExpiryDateColumn" prefWidth="120.0" text="Token Expiry Date">
+                     <cellValueFactory>
+                        <PropertyValueFactory property="tokenExpiryDate" />
+                     </cellValueFactory>
+                  </TableColumn>
+               </columns>
+            </TableView>
+         </content>
+      </ScrollPane>
+      <TextField fx:id="searchTextField" layoutX="607.0" layoutY="30.0" prefHeight="29.0" prefWidth="260.0" promptText="Enter ID/Reg No/Model/Type" style="-fx-background-radius: 20;" />
+   </children>
+</AnchorPane>

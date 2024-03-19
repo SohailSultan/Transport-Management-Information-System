@@ -1,0 +1,37 @@
+#contentPane{
+	-fx-background-color:  linear-gradient(to bottom right, #743c4c,#948454);
+}
+#HomePageButton:hover{
+	-fx-background-color: transparent;
+}
+.CategoryLabels{
+	-fx-background-color: #039BE5;
+	-fx-background-radius: 10px;
+	-fx-border-color:  white;
+	-fx-border-radius: 10px;
+}
+
+.CategoryButtons{
+	-fx-background-color: Transparent;
+	
+}
+
+.CategoryButtons:hover{
+	-fx-background-color: #00695C;	
+}
+
+.VehicleTextfields2{
+	-fx-border-width: 0 0 1 0 ;
+	-fx-border-color:silver;
+	-fx-background-color:  Transparent;
+    -fx-text-fill: white;
+    -fx-prompt-text-fill: white;
+}
+#buttonsPane{
+	-fx-background-color: linear-gradient(to bottom right, #272b3f,#642938);
+}
+
+#DataPane{
+	-fx-background-color:  #948454;
+}
+

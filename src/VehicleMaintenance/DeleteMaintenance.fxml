@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.Separator?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane fx:id="contentPane" prefHeight="600.0" prefWidth="947.0" stylesheets="@../ManageVehicle/ManageVehicle.css" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="VehicleMaintenance.DeleteMaintenanceController">
+   <children>
+      <Pane fx:id="DataPane" layoutX="84.0" layoutY="52.0" prefHeight="510.0" prefWidth="779.0" style="-fx-border-color: white; -fx-background-radius: 10px; -fx-border-radius: 10px;">
+         <children>
+            <TextField fx:id="AmountTextField" alignment="CENTER" editable="false" layoutX="126.0" layoutY="250.0" prefHeight="25.0" prefWidth="228.0" styleClass="VehicleTextfields2" stylesheets="@../ManageVehicle/ManageVehicle.css">
+               <font>
+                  <Font name="Times New Roman Bold Italic" size="16.0" />
+               </font>
+            </TextField>
+            <TextField fx:id="VehicleRegIDTextField" alignment="CENTER" editable="false" layoutX="417.0" layoutY="106.0" prefHeight="26.0" prefWidth="228.0" styleClass="VehicleTextfields2" stylesheets="@../ManageVehicle/ManageVehicle.css">
+               <font>
+                  <Font name="Times New Roman Bold Italic" size="16.0" />
+               </font>
+            </TextField>
+            <TextField fx:id="MaintenanceTypeTextField" alignment="CENTER" editable="false" layoutX="126.0" layoutY="108.0" prefHeight="26.0" prefWidth="228.0" styleClass="VehicleTextfields2" stylesheets="@../ManageVehicle/ManageVehicle.css">
+               <font>
+                  <Font name="Times New Roman Bold Italic" size="16.0" />
+               </font>
+            </TextField>
+            <TextField fx:id="WorkshopNameTextField" alignment="CENTER" editable="false" layoutX="126.0" layoutY="182.0" prefHeight="26.0" prefWidth="228.0" styleClass="VehicleTextfields2" stylesheets="@../ManageVehicle/ManageVehicle.css">
+               <font>
+                  <Font name="Times New Roman Bold Italic" size="16.0" />
+               </font>
+            </TextField>
+            <TextArea fx:id="DescriptionTextArea" editable="false" layoutX="126.0" layoutY="328.0" prefHeight="124.0" prefWidth="528.0" promptText="Maintenace Description" style="-fx-border-color: grey; -fx-border-width: 1.3;" text="&#10;">
+               <font>
+                  <Font name="Times New Roman Bold Italic" size="16.0" />
+               </font>
+            </TextArea>
+            <Label layoutX="133.0" layoutY="81.0" prefHeight="19.0" prefWidth="133.0" text="Maintenance type" textFill="WHITE">
+               <font>
+                  <Font name="Times New Roman Bold" size="16.0" />
+               </font>
+            </Label>
+            <Label layoutX="133.0" layoutY="156.0" prefHeight="19.0" prefWidth="133.0" text="Worshop Name" textFill="WHITE">
+               <font>
+                  <Font name="Times New Roman Bold" size="16.0" />
+               </font>
+            </Label>
+            <Label layoutX="133.0" layoutY="224.0" prefHeight="19.0" prefWidth="133.0" text="Amount" textFill="WHITE">
+               <font>
+                  <Font name="Times New Roman Bold" size="16.0" />
+               </font>
+            </Label>
+            <Label layoutX="417.0" layoutY="81.0" prefHeight="19.0" prefWidth="165.0" text="Vehicle Registration ID" textFill="WHITE">
+               <font>
+                  <Font name="Times New Roman Bold" size="16.0" />
+               </font>
+            </Label>
+            <Label layoutX="133.0" layoutY="303.0" prefHeight="19.0" prefWidth="174.0" text="Maintenace Description" textFill="WHITE">
+               <font>
+                  <Font name="Times New Roman Bold" size="16.0" />
+               </font>
+            </Label>
+            <Label layoutX="421.0" layoutY="156.0" prefHeight="19.0" prefWidth="133.0" text="Scheduled Date" textFill="WHITE">
+               <font>
+                  <Font name="Times New Roman Bold" size="16.0" />
+               </font>
+            </Label>
+            <Label layoutX="421.0" layoutY="224.0" prefHeight="19.0" prefWidth="133.0" text="Completion Date" textFill="WHITE">
+               <font>
+                  <Font name="Times New Roman Bold" size="16.0" />
+               </font>
+            </Label>
+            <Separator layoutY="65.0" prefHeight="1.0" prefWidth="779.0" />
+            <TextField fx:id="Maintenance_IDTextField" alignment="CENTER" layoutX="233.0" layoutY="20.0" prefHeight="28.0" prefWidth="278.0" promptText="Enter Maintenance ID/Vehicle Reg No." style="-fx-background-radius: 50; -fx-background-color: white; -fx-border-color: grey; -fx-border-radius: 50;">
+               <font>
+                  <Font name="Times New Roman" size="15.0" />
+               </font>
+            </TextField>
+            <JFXButton fx:id="SearchButton" buttonType="RAISED" layoutX="557.0" layoutY="14.0" onAction="#SearchRecord" prefHeight="41.0" prefWidth="56.0" ripplerFill="#2a25d0" style="-fx-background-color: Transparent;" text=" ">
+               <graphic>
+                  <ImageView fitHeight="32.0" fitWidth="36.0" pickOnBounds="true">
+                     <image>
+                        <Image url="@../Pictures/search-icon(new).png" />
+                     </image>
+                  </ImageView>
+               </graphic>
+            </JFXButton>
+            <JFXButton fx:id="DeleteRecordButton" layoutX="306.0" layoutY="466.0" onAction="#DeleteRecord" prefHeight="30.0" prefWidth="133.0" ripplerFill="#fcfcfc" style="-fx-background-color: #642938; -fx-background-radius: 10px; -fx-border-color: white; -fx-border-radius: 10px;" text="Delete Record" textFill="WHITE">
+               <font>
+                  <Font name="Times New Roman" size="13.0" />
+               </font>
+            </JFXButton>
+            <TextField fx:id="ScheduledDateTextField" alignment="CENTER" editable="false" layoutX="417.0" layoutY="189.0" prefHeight="26.0" prefWidth="228.0" styleClass="VehicleTextfields2" stylesheets="@../ManageVehicle/ManageVehicle.css">
+               <font>
+                  <Font name="Times New Roman Bold Italic" size="16.0" />
+               </font>
+            </TextField>
+            <TextField fx:id="CompletionDateTextField" alignment="CENTER" editable="false" layoutX="417.0" layoutY="250.0" prefHeight="26.0" prefWidth="228.0" styleClass="VehicleTextfields2" stylesheets="@../ManageVehicle/ManageVehicle.css">
+               <font>
+                  <Font name="Times New Roman Bold Italic" size="16.0" />
+               </font>
+            </TextField>
+         </children>
+      </Pane>
+      <Label alignment="CENTER" layoutX="269.0" layoutY="14.0" prefHeight="31.0" prefWidth="356.0" style="-fx-background-radius: 10px; -fx-border-color: white; -fx-border-radius: 10px;" stylesheets="@../ManageVehicle/ManageVehicle.css" text="Delete Maintenance" textFill="WHITE">
+         <font>
+            <Font name="Broadway" size="25.0" />
+         </font>
+      </Label>
+   </children>
+</AnchorPane>

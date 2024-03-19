@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXRadioButton?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.PasswordField?>
+<?import javafx.scene.control.ToggleGroup?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.paint.Color?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane fx:id="loginPaneSuper" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="500.0" prefWidth="471.0" style="-fx-border-color: grey grey grey white;" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Admin.LoginAsSuperController">
+   <children>
+      <PasswordField fx:id="passwordField1" alignment="CENTER" layoutX="146.0" layoutY="241.0" prefHeight="36.0" prefWidth="247.0" promptText="Enter Password" />
+      <Label fx:id="loginLabel1" alignment="CENTER" layoutX="103.0" layoutY="14.0" prefHeight="71.0" prefWidth="289.0" stylesheets="@../Login/Login.css" text="Login" textFill="#070000">
+         <font>
+            <Font name="Javanese Text" size="33.0" />
+         </font>
+      </Label>
+      <Label fx:id="errorLabel1" alignment="CENTER" layoutX="17.0" layoutY="319.0" prefHeight="23.0" prefWidth="437.0" textFill="#da1212">
+         <font>
+            <Font name="Bookman Old Style" size="12.0" />
+         </font>
+      </Label>
+      <ImageView fitHeight="26.0" fitWidth="28.0" layoutX="79.0" layoutY="246.0" pickOnBounds="true">
+         <image>
+            <Image url="@../Pictures/passwordIcon.png" />
+         </image>
+      </ImageView>
+      <JFXButton fx:id="loginButton1" layoutX="211.0" layoutY="316.0" onAction="#login" prefHeight="30.0" prefWidth="117.0" style="-fx-background-color: #1976D2;" text="LOGIN" textFill="WHITE">
+         <font>
+            <Font size="13.0" />
+         </font>
+      </JFXButton>
+      <JFXRadioButton layoutX="247.0" layoutY="160.0" onAction="#LoginAsAdmin" prefHeight="18.0" prefWidth="96.0" selected="true" text="Super Admin">
+         <selectedColor>
+            <Color red="0.0900767520070076" green="0.6973684430122375" blue="0.05811403691768646" />
+         </selectedColor>
+         <unSelectedColor>
+            <Color red="0.8552631735801697" green="0.03563596308231354" blue="0.03563596308231354" />
+         </unSelectedColor>
+         <toggleGroup>
+            <ToggleGroup fx:id="LoginAs" />
+         </toggleGroup>
+      </JFXRadioButton>
+      <JFXRadioButton layoutX="173.0" layoutY="160.0" onAction="#LoginAsAdmin" prefHeight="18.0" prefWidth="64.0" text="Admin" toggleGroup="$LoginAs">
+         <selectedColor>
+            <Color red="0.0900767520070076" green="0.6973684430122375" blue="0.05811403691768646" />
+         </selectedColor>
+         <unSelectedColor>
+            <Color red="0.8552631735801697" green="0.03563596308231354" blue="0.03563596308231354" />
+         </unSelectedColor>
+      </JFXRadioButton>
+   </children>
+</AnchorPane>

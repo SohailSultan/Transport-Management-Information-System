@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.PasswordField?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.effect.DisplacementMap?>
+<?import javafx.scene.effect.FloatMap?>
+<?import javafx.scene.effect.InnerShadow?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="500.0" prefWidth="465.0" stylesheets="@SignUp.css" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="SignUp.SignUpController">
+   <children>
+      <Label fx:id="SignupLabel" alignment="CENTER" layoutX="17.0" layoutY="54.0" prefHeight="36.0" prefWidth="432.0" style="-fx-background-color: #1976D2; -fx-background-radius: 5px;" stylesheets="@SignUp.css" text="Create Account" textFill="WHITE">
+         <font>
+            <Font name="Arial Rounded MT Bold" size="19.0" />
+         </font>
+         <effect>
+            <InnerShadow />
+         </effect>
+      </Label>
+      <AnchorPane layoutX="17.0" layoutY="107.0" prefHeight="382.0" prefWidth="432.0" style="-fx-background-color: white; -fx-background-radius: 10px;">
+         <children>
+            <Label fx:id="detailsLabel" alignment="CENTER" layoutX="147.0" layoutY="-9.0" prefHeight="19.0" prefWidth="139.0" style="-fx-background-color: #1976D2;" text=" New Account Details" textFill="WHITE" />
+            <TextField fx:id="firstNameTextfield" alignment="BASELINE_LEFT" layoutX="19.0" layoutY="39.0" prefHeight="36.0" prefWidth="168.0" promptText="First Name" styleClass="textfields" stylesheets="@SignUp.css" />
+            <PasswordField fx:id="passWordField" alignment="BASELINE_LEFT" layoutX="225.0" layoutY="118.0" prefHeight="36.0" prefWidth="168.0" promptText="Enter Password" stylesheets="@SignUp.css" />
+            <PasswordField fx:id="authPinField" alignment="BASELINE_LEFT" layoutX="19.0" layoutY="271.0" prefHeight="36.0" prefWidth="375.0" promptText="Enter Authentication PIN" stylesheets="@SignUp.css" />
+            <TextField fx:id="lastNameTextfield" alignment="BASELINE_LEFT" layoutX="217.0" layoutY="39.0" prefHeight="36.0" prefWidth="177.0" promptText="Last Name" styleClass="textfields" stylesheets="@SignUp.css" />
+            <TextField fx:id="userNameTextfield" alignment="BASELINE_LEFT" layoutX="23.0" layoutY="118.0" prefHeight="36.0" prefWidth="168.0" promptText="User Name" styleClass="textfields" stylesheets="@SignUp.css" />
+            <TextField fx:id="emailAddressTextfield" alignment="BASELINE_LEFT" layoutX="20.0" layoutY="190.0" prefHeight="36.0" prefWidth="375.0" promptText="Email Address" styleClass="textfields" stylesheets="@SignUp.css" />
+            <Label fx:id="warningLabel" layoutX="94.0" layoutY="254.0" prefHeight="17.0" prefWidth="262.0" text="Enter Autentication PIN to save data">
+               <font>
+                  <Font name="Cambria" size="12.0" />
+               </font>
+            </Label>
+            <JFXButton fx:id="submitButton" layoutX="20.0" layoutY="325.0" onAction="#Submit" prefHeight="25.0" prefWidth="375.0" style="-fx-background-color: #1976D2;" text="Submit" textFill="WHITE" />
+            <JFXButton fx:id="UploadImageButton" layoutX="294.0" layoutY="10.0" onAction="#ChooseFile" prefHeight="25.0" prefWidth="101.0" style="-fx-background-color: #1976D2;" text="Upload Picture" textAlignment="CENTER" textFill="WHITE">
+               <font>
+                  <Font name="System Bold" size="12.0" />
+               </font>
+            </JFXButton>
+         </children>
+         <effect>
+            <InnerShadow />
+         </effect>
+      </AnchorPane>
+      <JFXButton fx:id="cancelButton" layoutX="17.0" layoutY="14.0" onAction="#CanceltoLoginPage" prefHeight="25.0" prefWidth="53.0" style="-fx-background-color: #1976D2;" text="Back" textFill="WHITE" />
+   </children>
+   <effect>
+      <DisplacementMap>
+         <mapData>
+            <FloatMap />
+         </mapData>
+      </DisplacementMap>
+   </effect>
+</AnchorPane>

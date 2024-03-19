@@ -1,0 +1,174 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXListView?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Hyperlink?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.effect.BoxBlur?>
+<?import javafx.scene.effect.ColorAdjust?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="582.0" prefWidth="881.0" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Admin.SuperAdminController">
+   <children>
+      <AnchorPane fx:id="ButtonPane" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="582.0" prefWidth="249.0" stylesheets="@../Dashboard/design.css">
+         <children>
+            <JFXButton layoutY="81.0" onAction="#Home" prefHeight="39.0" prefWidth="250.0" ripplerFill="#0a0909" style="-fx-background-color: #00897b; -fx-border-color: #00897b;" stylesheets="@../Dashboard/Dashboard.css" text=" ">
+               <graphic>
+                  <ImageView fitHeight="28.0" fitWidth="34.0" pickOnBounds="true">
+                     <image>
+                        <Image url="@../Pictures/icons/red-home-icon.png" />
+                     </image>
+                  </ImageView>
+               </graphic>
+            </JFXButton>
+            <JFXButton alignment="CENTER" contentDisplay="CENTER" layoutY="159.0" onAction="#Generate_Reports" prefHeight="40.0" prefWidth="250.0" ripplerFill="#00897b" style="-fx-border-color: silver; -fx-border-width: .3px;" styleClass="Button_hover" stylesheets="@../Dashboard/Dashboard.css" text="Generate Reports" textFill="WHITE">
+               <font>
+                  <Font name="Arial Bold" size="15.0" />
+               </font>
+               <padding>
+                  <Insets bottom="5.0" top="5.0" />
+               </padding>
+            </JFXButton>
+            <JFXButton alignment="CENTER" contentDisplay="CENTER" layoutX="1.0" layoutY="528.0" onAction="#Logout" prefHeight="40.0" prefWidth="249.0" ripplerFill="#00897b" style="-fx-background-color: #FF3D00;" styleClass="Button_hover" stylesheets="@../Dashboard/Dashboard.css" text="Log Out" textFill="WHITE">
+               <font>
+                  <Font name="Arial Bold" size="15.0" />
+               </font>
+            </JFXButton>
+            <JFXButton fx:id="viewRecordButton" alignment="CENTER" contentDisplay="CENTER" graphicTextGap="20.0" layoutY="119.5" onAction="#View_Records" prefHeight="40.0" prefWidth="250.0" ripplerFill="#00897b" style="-fx-border-color: silver; -fx-border-width: .3px;" styleClass="Button_hover" stylesheets="@../Dashboard/Dashboard.css" text="View Records" textFill="WHITE">
+               <font>
+                  <Font name="Arial Bold" size="15.0" />
+               </font>
+            </JFXButton>
+            <AnchorPane layoutX="93.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="58.0" prefWidth="64.0" style="-fx-background-color: #272b3f; -fx-background-radius: 50%; -fx-border-color: grey; -fx-border-radius: 50%;">
+               <children>
+                  <ImageView accessibleRole="BUTTON" accessibleText="Admin" fitHeight="54.0" fitWidth="50.0" layoutX="7.0" layoutY="4.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../Pictures/adminIcon.png" />
+                     </image>
+                  </ImageView>
+               </children>
+            </AnchorPane>
+            <ImageView fitHeight="24.0" fitWidth="27.0" layoutX="14.0" layoutY="207.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../Pictures/import-icon.png" />
+               </image>
+               <effect>
+                  <ColorAdjust saturation="-1.0" />
+               </effect>
+            </ImageView>
+            <ImageView fitHeight="25.0" fitWidth="46.0" layoutX="12.0" layoutY="128.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../Pictures/View-icon%20(1).png" />
+               </image>
+               <effect>
+                  <ColorAdjust brightness="1.0" />
+               </effect>
+            </ImageView>
+            <ImageView fitHeight="22.0" fitWidth="25.0" layoutX="68.0" layoutY="537.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../Pictures/icons/back-icon.png" />
+               </image>
+               <effect>
+                  <ColorAdjust brightness="0.85" />
+               </effect>
+            </ImageView>
+            <Hyperlink fx:id="userNameLink" layoutX="68.0" layoutY="51.0" prefHeight="33.0" prefWidth="121.0" text="Super Admin" textFill="WHITE">
+               <font>
+                  <Font name="System Bold Italic" size="16.0" />
+               </font>
+            </Hyperlink>
+            <JFXButton alignment="CENTER" contentDisplay="CENTER" layoutY="199.0" onAction="#manageAdminPane" prefHeight="40.0" prefWidth="250.0" ripplerFill="#00897b" style="-fx-border-color: silver; -fx-border-width: .3px;" styleClass="Button_hover" stylesheets="@../Dashboard/Dashboard.css" text="Manage Admins" textFill="WHITE">
+               <font>
+                  <Font name="Arial Bold" size="15.0" />
+               </font>
+               <padding>
+                  <Insets bottom="5.0" top="5.0" />
+               </padding>
+            </JFXButton>
+            <ImageView fitHeight="24.0" fitWidth="27.0" layoutX="14.0" layoutY="167.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../Pictures/import-icon.png" />
+               </image>
+               <effect>
+                  <ColorAdjust saturation="-1.0" />
+               </effect>
+            </ImageView>
+            <JFXButton alignment="CENTER" contentDisplay="CENTER" layoutY="239.0" onAction="#AuthPinChangePane" prefHeight="40.0" prefWidth="250.0" ripplerFill="#00897b" style="-fx-border-color: silver; -fx-border-width: .3px;" styleClass="Button_hover" stylesheets="@../Dashboard/Dashboard.css" text="Change Authentication Pin" textFill="WHITE">
+               <font>
+                  <Font name="Arial Bold" size="15.0" />
+               </font>
+               <padding>
+                  <Insets bottom="5.0" top="5.0" />
+               </padding>
+            </JFXButton>
+         </children>
+      </AnchorPane>
+      <AnchorPane fx:id="NotificationPane" layoutX="249.0" layoutY="40.0" prefHeight="543.0" prefWidth="632.0" style="-fx-background-color: white;">
+         <children>
+            <JFXListView fx:id="NotificationList1" focusTraversable="false" layoutX="347.0" layoutY="183.0" prefHeight="319.0" prefWidth="270.0" />
+            <JFXButton buttonType="RAISED" layoutX="486.0" layoutY="121.0" onAction="#deleteSelectedRow" prefHeight="33.0" prefWidth="128.0" style="-fx-background-color: red;" text="Delete Notification" textFill="WHITE" />
+            <JFXListView fx:id="NotificationList" focusTraversable="false" layoutX="15.0" layoutY="183.0" prefHeight="319.0" prefWidth="332.0" />
+            <Label layoutX="15.0" layoutY="166.0" prefHeight="18.0" prefWidth="601.0" style="-fx-background-color: Green;" text="      ID" textFill="WHITE" />
+            <Label layoutX="120.0" layoutY="166.0" prefHeight="18.0" prefWidth="153.0" text="Notification detail" textFill="#fffafa" />
+            <Label layoutX="373.0" layoutY="166.0" prefHeight="18.0" prefWidth="74.0" text="User Name" textFill="#fffafa" />
+            <Label layoutX="519.0" layoutY="166.0" prefHeight="18.0" prefWidth="42.0" text="Time" textFill="#fffafa" />
+            <JFXButton buttonType="RAISED" layoutX="336.0" layoutY="121.0" onAction="#deleteAll" prefHeight="33.0" prefWidth="74.0" style="-fx-background-color: red;" text="Delete All" textFill="WHITE" />
+            <Label layoutX="221.0" layoutY="48.0" text="Recent Notifications ">
+               <font>
+                  <Font name="Calibri Bold" size="22.0" />
+               </font>
+            </Label>
+         </children>
+      </AnchorPane>
+      <Label alignment="CENTER" layoutX="249.0" prefHeight="81.0" prefWidth="632.0" style="-fx-background-color: #133540;" text="Super Admin View" textFill="WHITE">
+         <font>
+            <Font name="Calibri" size="21.0" />
+         </font>
+      </Label>
+      <AnchorPane fx:id="AuthResetPane" layoutX="249.0" layoutY="40.0" prefHeight="543.0" prefWidth="632.0" style="-fx-background-color: white;" visible="false">
+         <children>
+            <Label layoutX="105.0" layoutY="181.0" opacity="0.29" prefHeight="259.0" prefWidth="451.0" style="-fx-background-color: green;">
+               <effect>
+                  <BoxBlur />
+               </effect>
+            </Label>
+            <Label layoutX="153.0" layoutY="50.0" text="Reset Authentication PIN for Admin">
+               <font>
+                  <Font name="Calibri Bold" size="22.0" />
+               </font>
+            </Label>
+            <TextField fx:id="AuthenPasswordField" layoutX="291.0" layoutY="240.0" prefHeight="26.0" prefWidth="191.0" />
+            <TextField fx:id="AuthenPasswordField2" layoutX="291.0" layoutY="288.0" prefHeight="26.0" prefWidth="191.0" />
+            <Label layoutX="173.0" layoutY="244.0" text="Enter Auth PIN">
+               <font>
+                  <Font name="System Bold" size="13.0" />
+               </font></Label>
+            <Label layoutX="152.0" layoutY="292.0" text="Re-Enter Auth PIN">
+               <font>
+                  <Font name="System Bold" size="13.0" />
+               </font></Label>
+            <JFXButton fx:id="SaveButton" layoutX="330.0" layoutY="349.0" onAction="#ChangeAuthPIN" prefHeight="30.0" prefWidth="114.0" style="-fx-background-color: #18b272;" text="Save" textFill="WHITE" />
+            <Label fx:id="ErrorLabel" layoutX="316.0" layoutY="314.0" prefHeight="18.0" prefWidth="173.0" text="Paaswords are not matching" textFill="RED" visible="false" />
+         </children>
+      </AnchorPane>
+      <AnchorPane fx:id="manageAdminPane" layoutX="249.0" layoutY="40.0" prefHeight="543.0" prefWidth="632.0" style="-fx-background-color: white;" visible="false">
+         <children>
+            <Label layoutX="252.0" layoutY="65.0" text="Delete Admin">
+               <font>
+                  <Font name="Calibri Bold" size="22.0" />
+               </font>
+            </Label>
+            <JFXListView fx:id="adminListView" layoutX="14.0" layoutY="146.0" prefHeight="289.0" prefWidth="106.0" />
+            <Label layoutX="14.0" layoutY="128.0" prefHeight="18.0" prefWidth="601.0" style="-fx-background-color: green;" text="    Username             First Name                     Last Name                            Email                          login Status" textFill="WHITE" />
+            <JFXListView fx:id="adminListView1" layoutX="118.0" layoutY="146.0" prefHeight="289.0" prefWidth="225.0" />
+            <JFXListView fx:id="adminListView2" layoutX="343.0" layoutY="146.0" prefHeight="289.0" prefWidth="270.0" />
+            <JFXButton buttonType="RAISED" layoutX="539.0" layoutY="84.0" onAction="#deleteAdmin" prefHeight="33.0" prefWidth="74.0" style="-fx-background-color: red;" text="Delete " textFill="WHITE" />
+         </children>
+      </AnchorPane>
+   </children>
+</AnchorPane>

@@ -1,0 +1,131 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.effect.ColorAdjust?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="652.0" prefWidth="1252.0" style="-fx-background-color: white;" stylesheets="@../ManageVehicle/ManageVehicle.css" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="ManageDriver.manageDriverController">
+   <children>
+      <Pane layoutY="43.0" prefHeight="2.0" prefWidth="1252.0" style="-fx-background-color: silver;" stylesheets="@../ManageVehicle/ManageVehicle.css" />
+      <Label fx:id="heading_label" layoutX="407.0" layoutY="-5.0" prefHeight="58.0" prefWidth="716.0" stylesheets="@../Dashboard/Dashboard.css" text="Transport Management Information System For IIUI" textAlignment="CENTER" textFill="#9e2f2f">
+         <font>
+            <Font name="Arial Black" size="36.0" />
+         </font>
+         <padding>
+            <Insets bottom="10.0" right="10.0" top="10.0" />
+         </padding>
+      </Label>
+      <Pane fx:id="buttonsPane" layoutY="45.0" prefHeight="601.0" prefWidth="281.0" stylesheets="@../ManageVehicle/ManageVehicle.css">
+         <children>
+            <Pane layoutX="1.0" layoutY="135.0" prefHeight="2.0" prefWidth="279.0" style="-fx-background-color: white;" stylesheets="@../ManageVehicle/ManageVehicle.css" />
+            <Label layoutX="49.0" layoutY="91.0" prefHeight="29.0" prefWidth="183.0" stylesheets="@../ManageVehicle/ManageVehicle.css" text=" Manage Drivers" textFill="WHITE">
+               <font>
+                  <Font name="Broadway" size="21.0" />
+               </font>
+            </Label>
+            <ImageView fitHeight="51.0" fitWidth="70.0" layoutX="106.0" layoutY="24.0" pickOnBounds="true">
+               <image>
+                  <Image url="@../Pictures/Transport-Driver-icon.png" />
+               </image>
+               <effect>
+                  <ColorAdjust brightness="1.0" />
+               </effect>
+            </ImageView>
+            <JFXButton buttonType="RAISED" layoutY="201.0" onAction="#ViewDrivers" prefHeight="64.0" prefWidth="281.0" style="-fx-border-color: silver; -fx-border-width: .3px;" text="View Drivers" textFill="WHITE">
+               <font>
+                  <Font name="Century" size="15.0" />
+               </font>
+            </JFXButton>
+            <JFXButton buttonType="RAISED" layoutY="265.0" onAction="#addDriver" prefHeight="64.0" prefWidth="281.0" style="-fx-border-color: silver; -fx-border-width: .3px;" text="Add Driver" textFill="WHITE">
+               <font>
+                  <Font name="Century" size="15.0" />
+               </font>
+            </JFXButton>
+            <JFXButton buttonType="RAISED" layoutY="329.0" onAction="#DeleteDriver" prefHeight="64.0" prefWidth="281.0" style="-fx-border-color: silver; -fx-border-width: .3px;" text="Delete Driver" textFill="WHITE">
+               <font>
+                  <Font name="Century" size="15.0" />
+               </font>
+            </JFXButton>
+            <JFXButton buttonType="RAISED" layoutY="393.0" onAction="#updateDriver" prefHeight="64.0" prefWidth="281.0" style="-fx-border-color: silver; -fx-border-width: .3px;" text="Update Driver" textFill="WHITE">
+               <font>
+                  <Font name="Century" size="15.0" />
+               </font>
+            </JFXButton>
+            <JFXButton buttonType="RAISED" layoutY="457.0" onAction="#SearchDriver" prefHeight="64.0" prefWidth="281.0" style="-fx-border-color: silver; -fx-border-width: .3px;" text="Search Driver" textFill="WHITE">
+               <font>
+                  <Font name="Century" size="15.0" />
+               </font>
+            </JFXButton>
+            <ImageView fitHeight="28.0" fitWidth="31.0" layoutX="26.0" layoutY="472.0" pickOnBounds="true">
+               <image>
+                  <Image url="@../Pictures/icons/search-icon.png" />
+               </image>
+               <effect>
+                  <ColorAdjust brightness="1.0" saturation="-1.0" />
+               </effect>
+            </ImageView>
+            <ImageView fitHeight="21.0" fitWidth="31.0" layoutX="26.0" layoutY="415.0" pickOnBounds="true">
+               <image>
+                  <Image url="@../Pictures/edit-icon.png" />
+               </image>
+               <effect>
+                  <ColorAdjust saturation="-1.0" />
+               </effect>
+            </ImageView>
+            <ImageView fitHeight="21.0" fitWidth="31.0" layoutX="26.0" layoutY="351.0" pickOnBounds="true">
+               <image>
+                  <Image url="@../Pictures/delete-icon.png" />
+               </image>
+               <effect>
+                  <ColorAdjust brightness="1.0" />
+               </effect>
+            </ImageView>
+            <ImageView fitHeight="21.0" fitWidth="31.0" layoutX="26.0" layoutY="287.0" pickOnBounds="true">
+               <image>
+                  <Image url="@../Pictures/insert-icon.png" />
+               </image>
+               <effect>
+                  <ColorAdjust brightness="1.0" />
+               </effect>
+            </ImageView>
+            <ImageView fitHeight="21.0" fitWidth="31.0" layoutX="26.0" layoutY="223.0" pickOnBounds="true">
+               <image>
+                  <Image url="@../Pictures/View-icon%20(1).png" />
+               </image>
+               <effect>
+                  <ColorAdjust brightness="1.0" />
+               </effect>
+            </ImageView>
+         </children>
+      </Pane>
+      <AnchorPane fx:id="contentPane" layoutX="287.0" layoutY="46.0" prefHeight="600.0" prefWidth="956.0" stylesheets="@../ManageVehicle/ManageVehicle.css">
+         <children>
+            <Label layoutX="359.0" layoutY="28.0" prefHeight="29.0" prefWidth="260.0" stylesheets="@../ManageVehicle/ManageVehicle.css" text="Drivers List" textFill="WHITE">
+               <font>
+                  <Font name="Broadway" size="25.0" />
+               </font>
+            </Label>
+         </children></AnchorPane>
+      <JFXButton fx:id="HomePageButton" buttonType="RAISED" layoutX="14.0" layoutY="3.0" onAction="#HomePage" prefHeight="41.0" prefWidth="49.0" style="-fx-background-radius: 50%;" text=" " textFill="WHITE">
+         <font>
+            <Font name="Century" size="12.0" />
+         </font>
+         <graphic>
+            <ImageView fitHeight="33.0" fitWidth="34.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../Pictures/icons/red-home-icon.png" />
+               </image>
+               <effect>
+                  <ColorAdjust brightness="0.41" />
+               </effect>
+            </ImageView>
+         </graphic>
+      </JFXButton>
+   </children>
+</AnchorPane>

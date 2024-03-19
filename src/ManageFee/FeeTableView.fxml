@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ScrollPane?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane fx:id="contentPane" prefHeight="600.0" prefWidth="947.0" style="-fx-border-color: white; -fx-border-width: 1.5px;" stylesheets="@../ManageVehicle/ManageVehicle.css" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="ManageFee.FeeRecordTableController">
+   <children>
+      <ScrollPane layoutX="3.0" layoutY="72.0" prefHeight="484.0" prefWidth="945.0">
+         <content>
+            <TableView fx:id="FeeRecordTable" editable="true" prefHeight="506.0" prefWidth="926.0" style="-fx-background-color: silver;" tableMenuButtonVisible="true">
+               <columns>
+                  <TableColumn fx:id="Fee_IDCol" prefWidth="50.0" text="Fee ID" />
+                  <TableColumn fx:id="Paid_byCol" prefWidth="100.0" text="Paid by" />
+                  <TableColumn fx:id="Customer_NameCol" prefWidth="167.0" text="Customer Name" />
+                  <TableColumn fx:id="Father_NameCol" prefWidth="139.0" text="Father Name" />
+                  <TableColumn fx:id="DepartmentCol" prefWidth="100.0" text="Department" />
+                  <TableColumn fx:id="AmountCol" prefWidth="112.0" text="Amount" />
+                  <TableColumn fx:id="DateCol" prefWidth="106.0" text="Date" />
+                  <TableColumn fx:id="DiscountCol" prefWidth="86.0" text="Discount" />
+                  <TableColumn fx:id="CNICNoCol" prefWidth="120.0" text="CNIC No" />
+                  <TableColumn fx:id="Payment_MonthCol" prefWidth="60.0" text="Payment Month" />
+                  <TableColumn fx:id="Payment_YearCol" prefWidth="50.0" text="Payment Year" />
+               </columns>
+            </TableView>
+         </content>
+      </ScrollPane>
+      <Label layoutX="359.0" layoutY="28.0" prefHeight="29.0" prefWidth="260.0" stylesheets="@../ManageVehicle/ManageVehicle.css" text="Fee Record List" textFill="WHITE">
+         <font>
+            <Font name="Broadway" size="25.0" />
+         </font>
+      </Label>
+      <ImageView fitHeight="51.0" fitWidth="87.0" layoutX="241.0" layoutY="14.0" pickOnBounds="true">
+         <image>
+            <Image url="@../Pictures/coins-700000-icon.png" />
+         </image>
+      </ImageView>
+      <TextField fx:id="searchTextField" layoutX="619.0" layoutY="27.0" prefHeight="25.0" prefWidth="239.0" promptText="Enter ID/C.Name/Father/CNIC/Paidby" />
+   </children>
+</AnchorPane>

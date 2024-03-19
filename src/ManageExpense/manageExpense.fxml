@@ -1,0 +1,138 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.effect.ColorAdjust?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="648.0" prefWidth="1252.0" style="-fx-background-color: white; -fx-border-color: silver; -fx-border-width: 2px;" stylesheets="@../ManageVehicle/ManageVehicle.css" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="ManageExpense.manageExpenseController">
+   <children>
+      <Pane layoutY="43.0" prefHeight="2.0" prefWidth="1252.0" style="-fx-background-color: silver;" stylesheets="@../ManageVehicle/ManageVehicle.css" />
+      <Label fx:id="heading_label" layoutX="417.0" layoutY="-6.0" prefHeight="58.0" prefWidth="716.0" stylesheets="@../Dashboard/Dashboard.css" text="Transport Management Information System For IIUI" textAlignment="CENTER" textFill="#9a2424">
+         <font>
+            <Font name="Arial Black" size="36.0" />
+         </font>
+         <padding>
+            <Insets bottom="10.0" right="10.0" top="10.0" />
+         </padding>
+      </Label>
+      <Pane fx:id="buttonsPane" layoutX="1.0" layoutY="45.0" prefHeight="600.0" prefWidth="292.0" stylesheets="@../ManageVehicle/ManageVehicle.css">
+         <children>
+            <Label layoutX="54.0" layoutY="112.0" prefHeight="21.0" prefWidth="172.0" stylesheets="@../ManageVehicle/ManageVehicle.css" text=" Manage Expense" textFill="WHITE">
+               <font>
+                  <Font name="Broadway" size="18.0" />
+               </font>
+            </Label>
+            <ImageView fitHeight="58.0" fitWidth="93.0" layoutX="93.0" layoutY="34.0" pickOnBounds="true">
+               <image>
+                  <Image url="@../Pictures/Expense-icon.png" />
+               </image>
+            </ImageView>
+            <JFXButton buttonType="RAISED" layoutY="189.0" onAction="#ViewExpense" prefHeight="64.0" prefWidth="292.0" style="-fx-border-color: silver; -fx-border-width: .3px;" text="View Expense" textFill="WHITE">
+               <font>
+                  <Font name="Century" size="15.0" />
+               </font>
+            </JFXButton>
+            <JFXButton buttonType="RAISED" layoutY="253.0" onAction="#addExpense" prefHeight="64.0" prefWidth="292.0" style="-fx-border-color: silver; -fx-border-width: .3px;" text="Add Expense" textFill="WHITE">
+               <font>
+                  <Font name="Century" size="15.0" />
+               </font>
+            </JFXButton>
+            <JFXButton buttonType="RAISED" layoutY="317.0" onAction="#DeleteExpense" prefHeight="64.0" prefWidth="292.0" style="-fx-border-color: silver; -fx-border-width: .3px;" text="Delete Expense" textFill="WHITE">
+               <font>
+                  <Font name="Century" size="15.0" />
+               </font>
+            </JFXButton>
+            <JFXButton buttonType="RAISED" layoutY="381.0" onAction="#updateExpense" prefHeight="64.0" prefWidth="292.0" style="-fx-border-color: silver; -fx-border-width: .3px;" text="Update Expense" textFill="WHITE">
+               <font>
+                  <Font name="Century" size="15.0" />
+               </font>
+            </JFXButton>
+            <JFXButton buttonType="RAISED" layoutY="445.0" onAction="#SearchExpense" prefHeight="64.0" prefWidth="292.0" style="-fx-border-color: silver; -fx-border-width: .3px;" text="Search Expense" textFill="WHITE">
+               <font>
+                  <Font name="Century" size="15.0" />
+               </font>
+            </JFXButton>
+            <ImageView fitHeight="28.0" fitWidth="31.0" layoutX="26.0" layoutY="460.0" pickOnBounds="true">
+               <image>
+                  <Image url="@../Pictures/icons/search-icon.png" />
+               </image>
+               <effect>
+                  <ColorAdjust brightness="1.0" saturation="-1.0" />
+               </effect>
+            </ImageView>
+            <ImageView fitHeight="21.0" fitWidth="31.0" layoutX="26.0" layoutY="403.0" pickOnBounds="true">
+               <image>
+                  <Image url="@../Pictures/edit-icon.png" />
+               </image>
+               <effect>
+                  <ColorAdjust saturation="-1.0" />
+               </effect>
+            </ImageView>
+            <ImageView fitHeight="21.0" fitWidth="31.0" layoutX="26.0" layoutY="339.0" pickOnBounds="true">
+               <image>
+                  <Image url="@../Pictures/delete-icon.png" />
+               </image>
+               <effect>
+                  <ColorAdjust brightness="1.0" />
+               </effect>
+            </ImageView>
+            <ImageView fitHeight="21.0" fitWidth="31.0" layoutX="26.0" layoutY="275.0" pickOnBounds="true">
+               <image>
+                  <Image url="@../Pictures/insert-icon.png" />
+               </image>
+               <effect>
+                  <ColorAdjust brightness="1.0" />
+               </effect>
+            </ImageView>
+            <ImageView fitHeight="21.0" fitWidth="31.0" layoutX="26.0" layoutY="211.0" pickOnBounds="true">
+               <image>
+                  <Image url="@../Pictures/View-icon%20(1).png" />
+               </image>
+               <effect>
+                  <ColorAdjust brightness="1.0" />
+               </effect>
+            </ImageView>
+         </children>
+      </Pane>
+      <AnchorPane fx:id="contentPane" layoutX="299.0" layoutY="45.0" prefHeight="600.0" prefWidth="951.0" stylesheets="@../ManageVehicle/ManageVehicle.css">
+         <children>
+            <Label layoutX="359.0" layoutY="28.0" prefHeight="29.0" prefWidth="260.0" stylesheets="@../ManageVehicle/ManageVehicle.css" text="Expense List" textFill="WHITE">
+               <font>
+                  <Font name="Broadway" size="25.0" />
+               </font>
+            </Label>
+            <ImageView fitHeight="40.0" fitWidth="93.0" layoutX="227.0" layoutY="23.0" pickOnBounds="true">
+               <image>
+                  <Image url="@../Pictures/Expense-icon.png" />
+               </image>
+            </ImageView>
+            <Button layoutX="61.0" layoutY="381.0" mnemonicParsing="false" onAction="#SearchExpense" prefHeight="40.0" prefWidth="279.0" style="-fx-text-fill: white;" styleClass="CategoryButtons" stylesheets="@../ManageVehicle/ManageVehicle.css">
+               <font>
+                  <Font name="Century" size="15.0" />
+               </font>
+            </Button>
+         </children></AnchorPane>
+      <JFXButton fx:id="HomePageButton" buttonType="RAISED" layoutX="1.0" layoutY="3.0" onAction="#HomePage" prefHeight="41.0" prefWidth="49.0" style="-fx-background-radius: 50%;" text=" " textFill="WHITE">
+         <font>
+            <Font name="Century" size="12.0" />
+         </font>
+         <graphic>
+            <ImageView fitHeight="33.0" fitWidth="34.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../Pictures/icons/red-home-icon.png" />
+               </image>
+               <effect>
+                  <ColorAdjust brightness="0.41" />
+               </effect>
+            </ImageView>
+         </graphic>
+      </JFXButton>
+   </children>
+</AnchorPane>

@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ScrollPane?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane fx:id="contentPane" prefHeight="600.0" prefWidth="951.0" stylesheets="@../ManageVehicle/ManageVehicle.css" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="ManageExpense.ExpenseTableController">
+   <children>
+      <ScrollPane layoutX="3.0" layoutY="72.0" prefHeight="484.0" prefWidth="944.0">
+         <content>
+            <TableView fx:id="ExpenseTable" editable="true" prefHeight="506.0" prefWidth="997.0" style="-fx-background-color: silver;" tableMenuButtonVisible="true">
+               <columns>
+                  <TableColumn fx:id="ExpIDCol" prefWidth="100.0" text="Expense ID" />
+                  <TableColumn fx:id="ExpenseTypeCol" prefWidth="120.0" text="Expense Type" />
+                  <TableColumn fx:id="DateCol" prefWidth="98.0" text="Date" />
+                  <TableColumn fx:id="ExpenseDetailCol" prefWidth="170.0" text="Expense detail" />
+                  <TableColumn fx:id="AmountCol" prefWidth="127.0" text="Amount" />
+                  <TableColumn fx:id="MonthCol" prefWidth="55.0" text="Month" />
+                  <TableColumn fx:id="YearCol" prefWidth="55.0" text="Year" />
+                  <TableColumn fx:id="PaymentCol" prefWidth="127.0" text="Payment Method" />
+                  <TableColumn fx:id="ConsumerIDCol" prefWidth="127.0" text="Consumer ID" />
+                  <TableColumn fx:id="ConsumerNameCol" prefWidth="127.0" text="Consumer Name" />
+                  <TableColumn fx:id="ConsumerCNICCol" prefWidth="127.0" text="Consumer CNIC#" />
+               </columns>
+            </TableView>
+         </content>
+      </ScrollPane>
+      <Label layoutX="359.0" layoutY="28.0" prefHeight="29.0" prefWidth="260.0" stylesheets="@../ManageVehicle/ManageVehicle.css" text="Expense List" textFill="WHITE">
+         <font>
+            <Font name="Broadway" size="25.0" />
+         </font>
+      </Label>
+      <ImageView fitHeight="40.0" fitWidth="93.0" layoutX="227.0" layoutY="23.0" pickOnBounds="true">
+         <image>
+            <Image url="@../Pictures/Expense-icon.png" />
+         </image>
+      </ImageView>
+      <TextField fx:id="searchTextField" layoutX="605.0" layoutY="30.0" prefHeight="25.0" prefWidth="249.0" promptText="Enter ID/Type/C.Name/CNIC...." />
+   </children>
+</AnchorPane>

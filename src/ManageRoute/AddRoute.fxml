@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane fx:id="contentPane" prefHeight="600.0" prefWidth="947.0" stylesheets="@../ManageVehicle/ManageVehicle.css" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="ManageRoute.AddRouteController">
+   <children>
+      <Pane layoutX="84.0" layoutY="47.0" prefHeight="539.0" prefWidth="779.0" style="-fx-border-color: white; -fx-border-radius: 10px;">
+         <children>
+            <Button fx:id="SaveButton" layoutX="318.0" layoutY="472.0" mnemonicParsing="false" onAction="#SaveRecord" prefHeight="27.0" prefWidth="143.0" style="-fx-background-color: #642938; -fx-border-color: white; -fx-text-fill: white; -fx-background-radius: 10; -fx-border-radius: 10;" text="Save Record" />
+            <TextField fx:id="StartNameTextField" alignment="CENTER" layoutX="112.0" layoutY="127.0" prefHeight="25.0" prefWidth="228.0" promptText="Start Point Name">
+               <font>
+                  <Font name="Times New Roman" size="16.0" />
+               </font>
+            </TextField>
+            <TextField fx:id="OccupationTextField" alignment="CENTER" layoutX="453.0" layoutY="61.0" prefHeight="25.0" prefWidth="228.0" promptText="No. of Occupation">
+               <font>
+                  <Font name="Times New Roman" size="16.0" />
+               </font>
+            </TextField>
+            <TextField fx:id="routenameTextField" alignment="CENTER" layoutX="112.0" layoutY="61.0" prefHeight="25.0" prefWidth="228.0" promptText="Route Name">
+               <font>
+                  <Font name="Times New Roman" size="16.0" />
+               </font>
+            </TextField>
+            <TextField fx:id="BusIDTextField" alignment="CENTER" layoutX="453.0" layoutY="127.0" prefHeight="25.0" prefWidth="228.0" promptText="Bus ID">
+               <font>
+                  <Font name="Times New Roman" size="16.0" />
+               </font>
+            </TextField>
+            <TextField fx:id="ReachTimeTextField" alignment="CENTER" layoutX="112.0" layoutY="333.0" prefHeight="25.0" prefWidth="228.0" promptText="University Arrival Time">
+               <font>
+                  <Font name="Times New Roman" size="16.0" />
+               </font>
+            </TextField>
+            <TextField fx:id="PickupTimeTextField" alignment="CENTER" layoutX="112.0" layoutY="265.0" prefHeight="25.0" prefWidth="228.0" promptText="University Departure Time">
+               <font>
+                  <Font name="Times New Roman" size="16.0" />
+               </font>
+            </TextField>
+            <TextField fx:id="FairsTextField" alignment="CENTER" layoutX="112.0" layoutY="396.0" prefHeight="25.0" prefWidth="228.0" promptText="Fairs per Student">
+               <font>
+                  <Font name="Times New Roman" size="16.0" />
+               </font>
+            </TextField>
+            <TextField fx:id="EndNameTextField" alignment="CENTER" layoutX="112.0" layoutY="202.0" prefHeight="25.0" prefWidth="228.0" promptText="Ending Point Name">
+               <font>
+                  <Font name="Times New Roman" size="16.0" />
+               </font>
+            </TextField>
+            <TextField fx:id="Driver_IDTextField" alignment="CENTER" layoutX="453.0" layoutY="202.0" prefHeight="25.0" prefWidth="228.0" promptText="Driver ID">
+               <font>
+                  <Font name="Times New Roman" size="16.0" />
+               </font>
+            </TextField>
+            <TextField fx:id="Conductor_IDTextField" alignment="CENTER" layoutX="453.0" layoutY="265.0" prefHeight="25.0" prefWidth="228.0" promptText="Conductor ID">
+               <font>
+                  <Font name="Times New Roman" size="16.0" />
+               </font>
+            </TextField>
+            <TextField fx:id="StopsNameTextField" alignment="CENTER" layoutX="453.0" layoutY="333.0" prefHeight="25.0" prefWidth="228.0" promptText="Route Stops Name">
+               <font>
+                  <Font name="Times New Roman" size="16.0" />
+               </font>
+            </TextField>
+         </children>
+      </Pane>
+      <Label alignment="CENTER" layoutX="314.0" layoutY="14.0" prefHeight="29.0" prefWidth="260.0" style="-fx-border-color: white; -fx-border-radius: 10px;" stylesheets="@../ManageVehicle/ManageVehicle.css" text="Add new Route" textFill="WHITE">
+         <font>
+            <Font name="Broadway" size="25.0" />
+         </font>
+      </Label>
+   </children>
+</AnchorPane>

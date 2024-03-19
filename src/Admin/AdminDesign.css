@@ -1,0 +1,5 @@
+.TextFieldsBorder{
+-fx-border-style: hidden hidden solid hidden;
+    -fx-border-width: 0 0 2 0;
+    
+    }

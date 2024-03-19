@@ -1,0 +1,151 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.ChoiceBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.MenuItem?>
+<?import javafx.scene.control.ProgressIndicator?>
+<?import javafx.scene.control.Separator?>
+<?import javafx.scene.control.SplitMenuButton?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.effect.DropShadow?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.paint.Color?>
+<?import javafx.scene.text.Font?>
+
+<Pane fx:id="screen_pane" prefHeight="587.0" prefWidth="1000.0" style="-fx-background-color: white;" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="GenerateReports.generateReportsController">
+   <children>
+      <AnchorPane fx:id="buttonsPane" layoutX="6.0" layoutY="4.0" prefHeight="61.0" prefWidth="988.0" style="-fx-background-radius: 12px; -fx-border-color: white; -fx-border-radius: 12px;" stylesheets="@../ManageVehicle/ManageVehicle.css">
+         <effect>
+            <DropShadow>
+               <color>
+                  <Color red="0.5131579041481018" green="0.4347587823867798" blue="0.4347587823867798" />
+               </color>
+            </DropShadow>
+         </effect>
+         <children>
+            <Label layoutX="423.0" layoutY="12.0" prefHeight="37.0" prefWidth="142.0" text="REPORTS" textFill="WHITE">
+               <font>
+                  <Font name="Goudy Old Style" size="31.0" />
+               </font>
+            </Label>
+            <ProgressIndicator fx:id="loadingIndicator" layoutX="365.0" prefHeight="62.0" prefWidth="35.0" visible="false" />
+         </children>
+      </AnchorPane>
+      <AnchorPane fx:id="contentPane" layoutX="4.0" layoutY="77.0" prefHeight="507.0" prefWidth="994.0" style="-fx-background-radius: 12px; -fx-border-color: white; -fx-border-radius: 12px;" stylesheets="@../ManageVehicle/ManageVehicle.css">
+         <effect>
+            <DropShadow>
+               <color>
+                  <Color red="0.5131579041481018" green="0.4347587823867798" blue="0.4347587823867798" />
+               </color>
+            </DropShadow>
+         </effect>
+         <children>
+            <AnchorPane layoutX="14.0" layoutY="16.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="480.0" prefWidth="219.0" style="-fx-background-color: white; -fx-background-radius: 8px;">
+               <children>
+                  <SplitMenuButton alignment="CENTER" layoutX="4.0" layoutY="14.0" mnemonicParsing="false" onAction="#VehicleReport" popupSide="RIGHT" prefHeight="26.0" prefWidth="212.0" style="-fx-background-color: #642938;" text="Vehicles Report">
+                    <items>
+                        <MenuItem mnemonicParsing="false" onAction="#VehiclesAll" text="All Vehicles List" />
+                      <MenuItem mnemonicParsing="false" onAction="#VehicleOccupationReport" text="Vehicle Occupation Report" />
+                        <MenuItem mnemonicParsing="false" onAction="#PaidPassenger_VehicleList" text="Paid Passenger on Single Vehicle" />
+                    </items>
+                  </SplitMenuButton>
+                  <SplitMenuButton alignment="CENTER" layoutX="4.0" layoutY="48.0" mnemonicParsing="false" onAction="#RouteReport" popupSide="RIGHT" prefHeight="26.0" prefWidth="212.0" style="-fx-background-color: #642938;" text="Routes Report">
+                     <items>
+                        <MenuItem mnemonicParsing="false" onAction="#RoutesAll" text="All Routes List" />
+                        <MenuItem mnemonicParsing="false" onAction="#RoutesOccupationReport" text="Routes Occupation Report" />
+                        <MenuItem mnemonicParsing="false" onAction="#PaidPassenger_SingleRouteList" text="Paid Passegngers list with Single Route " />
+                     </items>
+                  </SplitMenuButton>
+                  <SplitMenuButton alignment="CENTER" layoutX="4.0" layoutY="97.0" mnemonicParsing="false" onAction="#StudentReport" popupSide="RIGHT" prefHeight="26.0" prefWidth="212.0" style="-fx-background-color: #642938;" text="Students Report">
+                     <items>
+                        <MenuItem mnemonicParsing="false" onAction="#AllStudents" text="All Students List" />
+                     </items>
+                  </SplitMenuButton>
+                  <SplitMenuButton alignment="CENTER" layoutX="4.0" layoutY="129.0" mnemonicParsing="false" onAction="#FacultyReport" popupSide="RIGHT" prefHeight="26.0" prefWidth="212.0" style="-fx-background-color: #642938;" text="Faculty Report">
+                     <items>
+                        <MenuItem mnemonicParsing="false" onAction="#AllFaculty" text="All Faculty List" />
+                     </items>
+                  </SplitMenuButton>
+                  <SplitMenuButton alignment="CENTER" layoutX="4.0" layoutY="162.0" mnemonicParsing="false" onAction="#DriverReport" popupSide="RIGHT" prefHeight="26.0" prefWidth="212.0" style="-fx-background-color: #642938;" text="Drivers Report">
+                     <items>
+                        <MenuItem mnemonicParsing="false" onAction="#AllDrivers" text="All Drivers List" />
+                     </items>
+                  </SplitMenuButton>
+                  <SplitMenuButton alignment="CENTER" layoutX="4.0" layoutY="194.0" mnemonicParsing="false" onAction="#ConductorReport" popupSide="RIGHT" prefHeight="26.0" prefWidth="212.0" style="-fx-background-color: #642938;" text="Conductors Report">
+                     <items>
+                        <MenuItem mnemonicParsing="false" onAction="#conductor" text="All Conductors List" />
+                     </items>
+                  </SplitMenuButton>
+                  <SplitMenuButton alignment="CENTER" layoutX="4.0" layoutY="250.0" mnemonicParsing="false" onAction="#FeeReport" popupSide="TOP" prefHeight="26.0" prefWidth="212.0" style="-fx-background-color: #642938;" text="Fee Reports">
+                     <items>
+                        <MenuItem mnemonicParsing="false" onAction="#AllFeeRecords" text="All Fee report" />
+                        <MenuItem mnemonicParsing="false" onAction="#Monthly_Fee_report" text="Monthly Fee report" />
+                        <MenuItem mnemonicParsing="false" onAction="#Annual_Fee_Report" text="Annual Fee Report" />
+                        <MenuItem mnemonicParsing="false" onAction="#FeeReportBy_Students" text="Fee Report By Students" />
+                        <MenuItem mnemonicParsing="false" onAction="#FeeReportBy_Faculty" text="Fee Report By Faculty" />
+                        <MenuItem mnemonicParsing="false" onAction="#FeeReportBy_Route" text="Fee Report By Route" />
+                        <MenuItem mnemonicParsing="false" onAction="#FeeReportBy_Vehicle" text="Fee Report By Vehicle" />
+                     </items>
+                  </SplitMenuButton>
+                  <SplitMenuButton alignment="CENTER" layoutX="4.0" layoutY="282.0" mnemonicParsing="false" onAction="#SalaryReport" popupSide="TOP" prefHeight="26.0" prefWidth="212.0" style="-fx-background-color: #642938;" text="Salary Reports">
+                     <items>
+                        <MenuItem mnemonicParsing="false" onAction="#AllSalaryReport" text="All Salary report" />
+                        <MenuItem mnemonicParsing="false" onAction="#Monthly_Salary_report" text="Monthly Salary report" />
+                        <MenuItem mnemonicParsing="false" onAction="#Annual_Salary_Report" text="Annual Salary report" />
+                     </items>
+                  </SplitMenuButton>
+                  <SplitMenuButton alignment="CENTER" layoutX="4.0" layoutY="314.0" mnemonicParsing="false" onAction="#expenseReport" popupSide="TOP" prefHeight="26.0" prefWidth="212.0" style="-fx-background-color: #642938;" text="Expense Reports">
+                     <items>
+                        <MenuItem mnemonicParsing="false" onAction="#AllExpensesReport" text="All Expense report" />
+                        <MenuItem mnemonicParsing="false" onAction="#Monthly_Expense_report" text="Monthly Expense report" />
+                        <MenuItem mnemonicParsing="false" onAction="#Annual_Expense_Report" text="Annual Expense Report" />
+                        <MenuItem mnemonicParsing="false" onAction="#Expense_By_Vehicle" text="Expense Amount By Vehicle" />
+                     </items>
+                  </SplitMenuButton>
+                  <SplitMenuButton alignment="CENTER" layoutX="4.0" layoutY="346.0" mnemonicParsing="false" onAction="#TokenReport" popupSide="TOP" prefHeight="26.0" prefWidth="212.0" style="-fx-background-color: #642938;" text="Token Reports">
+                     <items>
+                        <MenuItem mnemonicParsing="false" onAction="#AllTokensReports" text="All Tokens report" />
+                        <MenuItem mnemonicParsing="false" onAction="#TokenExpiryReport" text="Expiry Date of Tokens by Vehicle" />
+                     </items>
+                  </SplitMenuButton>
+                  <SplitMenuButton alignment="CENTER" layoutX="4.0" layoutY="401.0" mnemonicParsing="false" onAction="#MaintenanceReport" popupSide="TOP" prefHeight="26.0" prefWidth="212.0" style="-fx-background-color: #642938;" text="Maintenance Reports">
+                     <items>
+                        <MenuItem mnemonicParsing="false" onAction="#MaintenanceAll" text="All Maintenance report" />
+                        <MenuItem mnemonicParsing="false" onAction="#MaintenancePendingList" text="List of Pending Vehicle" />
+                        <MenuItem mnemonicParsing="false" onAction="#MaintenanceCompletedList" text="List of Completed Vehicle" />
+                     </items>
+                  </SplitMenuButton>
+                  <SplitMenuButton alignment="CENTER" layoutX="4.0" layoutY="440.0" mnemonicParsing="false" onAction="#MaintenanceReport" popupSide="TOP" prefHeight="26.0" prefWidth="212.0" style="-fx-background-color: #642938;" text="Reservation Reports">
+                     <items>
+                        <MenuItem mnemonicParsing="false" onAction="#All_Reservation_report" text="All Reservationreport" />
+                        <MenuItem mnemonicParsing="false" onAction="#ReservationPending" text="List of Pending Vehicle" />
+                        <MenuItem mnemonicParsing="false" onAction="#ReservationCompleted" text="List of Completed Vehicle" />
+                     </items>
+                  </SplitMenuButton>
+                  <Separator layoutY="85.0" prefHeight="3.0" prefWidth="219.0" />
+                  <Separator layoutX="1.0" layoutY="234.0" prefHeight="3.0" prefWidth="219.0" />
+                  <Separator layoutY="386.0" prefHeight="3.0" prefWidth="219.0" />
+               </children>
+            </AnchorPane>
+            <Separator layoutX="243.0" orientation="VERTICAL" prefHeight="507.0" prefWidth="0.0" />
+            <AnchorPane fx:id="ParametersPane" layoutX="259.0" layoutY="12.0" prefHeight="487.0" prefWidth="725.0" style="-fx-background-color: white; -fx-border-color: black; -fx-background-radius: 12px; -fx-border-radius: 12px;">
+               <children>
+                  <TextField fx:id="Textfield2" layoutX="407.0" layoutY="59.0" prefHeight="26.0" prefWidth="152.0" promptText="Enter Year" style="-fx-border-color: grey; -fx-border-radius: 8px;" />
+                  <Label layoutX="413.0" layoutY="41.0" text="Enter Year" />
+                  <ChoiceBox fx:id="selectMonthChoiceBox" layoutX="166.0" layoutY="58.0" prefHeight="28.0" prefWidth="152.0" style="-fx-background-color: white; -fx-background-radius: 8px; -fx-border-color: grey; -fx-border-radius: 8px;" stylesheets="@../Dashboard/design.css" />
+                  <Label layoutX="166.0" layoutY="42.0" text="Select Month">
+                     <font>
+                        <Font size="11.0" />
+                     </font>
+                  </Label>
+                  <Separator layoutX="8.0" layoutY="106.0" prefHeight="3.0" prefWidth="714.0" />
+                  <TextField fx:id="TextField3" layoutX="166.0" layoutY="147.0" prefHeight="26.0" prefWidth="152.0" style="-fx-border-color: grey; -fx-border-radius: 8px;" />
+                  <Label fx:id="TextField3Label" layoutX="123.0" layoutY="129.0" prefHeight="18.0" prefWidth="152.0" />
+               </children>
+            </AnchorPane>
+         </children>
+      </AnchorPane>
+      <Separator layoutY="70.0" prefWidth="1000.0" />
+   </children>
+</Pane>

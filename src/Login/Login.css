@@ -1,0 +1,29 @@
+
+#loginPane{
+	-fx-background-color: white;
+}
+#leftPane{
+	-fx-background-color: linear-gradient(#1976D2,#607D8B, #388E3C);
+}
+
+.HeadingLabels{
+	-fx-text-fill: #F3E5F5;
+}
+#usernameTextfield{
+	-fx-prompt-text-fill: grey;
+	-fx-font-size: 16.0px;
+}
+
+#passwordField{
+	-fx-prompt-text-fill: grey;
+}
+#loginLabel{
+}
+#welcomeLabel:hover{
+	
+}
+
+#loginLabel:hover{
+	-fx-text-fill: Green;
+}
+

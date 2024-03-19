@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXRadioButton?>
+<?import javafx.scene.control.Hyperlink?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.PasswordField?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.control.ToggleGroup?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.paint.Color?>
+<?import javafx.scene.shape.Line?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane fx:id="LoginPane" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="500.0" prefWidth="874.0" stylesheets="@Login.css" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Login.loginController">
+   <children>
+      <AnchorPane id="leftPane" fx:id="leftPane" layoutX="-4.0" prefHeight="500.0" prefWidth="413.0" stylesheets="@Login.css">
+         <children>
+           
+            <Label fx:id="headinglabel" alignment="CENTER" layoutX="2.0" prefHeight="65.0" prefWidth="400.0" styleClass="HeadingLabels" stylesheets="@Login.css" text="Transport Management System" textFill="#5f862b" wrapText="true">
+               <font>
+                  <Font name="Javanese Text" size="23.0" />
+               </font>
+            </Label>
+            <Label fx:id="welcomeLabel" alignment="CENTER" layoutX="55.0" layoutY="188.0" opacity="0.52" prefHeight="60.0" prefWidth="298.0" style="-fx-background-color: WHITE; -fx-background-radius: 20px; -fx-border-color: #00897B; -fx-border-radius: 20px; -fx-border-insets: 2;" stylesheets="@Login.css" text="WELCOME" textFill="#1c67a1">
+               <font>
+                  <Font name="Javanese Text" size="23.0" />
+               </font>
+            </Label>
+            <ImageView fx:id="WelcomeImage" fitHeight="227.0" fitWidth="289.0" layoutX="57.0" layoutY="265.0" opacity="0.73" pickOnBounds="true">
+               <image>
+                  <Image url="@../Pictures/bus-icon3.png" />
+               </image>
+            </ImageView>
+            <Label fx:id="headinglabel11" alignment="CENTER" layoutX="5.0" layoutY="75.0" prefHeight="32.0" prefWidth="392.0" styleClass="HeadingLabels" stylesheets="@Login.css" text=" Ibadat International University " textFill="WHITE">
+               <font>
+                  <Font name="Javanese Text" size="23.0" />
+               </font>
+            </Label>
+            <Label fx:id="headinglabel1" alignment="CENTER" layoutX="1.0" layoutY="42.0" prefHeight="32.0" prefWidth="400.0" styleClass="HeadingLabels" stylesheets="@Login.css" text="For" textFill="WHITE">
+               <font>
+                  <Font name="Javanese Text" size="23.0" />
+               </font>
+            </Label>
+            <Label fx:id="headinglabel111" alignment="CENTER" layoutX="5.0" layoutY="108.0" prefHeight="23.0" prefWidth="392.0" styleClass="HeadingLabels" stylesheets="@Login.css" text="Islamabad" textFill="WHITE">
+               <font>
+                  <Font name="Javanese Text" size="23.0" />
+               </font>
+            </Label>
+            <Line endX="155.0" endY="-6.2061309814453125" layoutX="160.0" layoutY="165.0" startX="-54.0" startY="-6.2061309814453125" stroke="#ebb9b9" />
+            <Line endX="158.0" layoutX="160.0" layoutY="277.0" startX="-53.0" stroke="#ebb9b9" />
+         </children>
+      </AnchorPane>
+      <AnchorPane fx:id="loginPane" layoutX="405.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="500.0" prefWidth="480.0" style="-fx-border-color: grey grey grey white;">
+         <children>
+            <Label fx:id="loginLabel" alignment="CENTER" layoutX="80.0" layoutY="14.0" prefHeight="17.0" prefWidth="289.0" stylesheets="@Login.css" text="Login" textFill="#070000">
+               <font>
+                  <Font name="Javanese Text" size="33.0" />
+               </font>
+            </Label>
+            <TextField fx:id="usernameTextfield" alignment="CENTER" layoutX="136.0" layoutY="196.0" prefHeight="36.0" prefWidth="247.0" promptText="Enter Username" />
+            <PasswordField fx:id="passwordField" alignment="CENTER" layoutX="133.0" layoutY="243.0" prefHeight="36.0" prefWidth="247.0" promptText="Enter Password" />
+            <Hyperlink layoutX="315.0" layoutY="415.0" onAction="#forgotPassword" prefHeight="24.0" prefWidth="117.0" text="Forgot Password">
+               <font>
+                  <Font name="Times New Roman" size="15.0" />
+               </font>
+            </Hyperlink>
+            <Hyperlink layoutX="50.0" layoutY="415.0" onAction="#SignUp" prefHeight="24.0" prefWidth="117.0" text="Create Account">
+               <font>
+                  <Font name="Times New Roman" size="15.0" />
+               </font>
+            </Hyperlink>
+            <Label fx:id="errorLabel" alignment="CENTER" layoutX="21.0" layoutY="285.0" prefHeight="23.0" prefWidth="437.0" textFill="#da1212">
+               <font>
+                  <Font name="Bookman Old Style" size="12.0" />
+               </font>
+            </Label>
+            <ImageView fitHeight="32.0" fitWidth="34.0" layoutX="66.0" layoutY="199.0" pickOnBounds="true">
+               <image>
+                  <Image url="@../Pictures/administrator-icon.png" />
+               </image>
+            </ImageView>
+            <ImageView fitHeight="26.0" fitWidth="28.0" layoutX="66.0" layoutY="250.0" pickOnBounds="true">
+               <image>
+                  <Image url="@../Pictures/passwordIcon.png" />
+               </image>
+            </ImageView>
+            <JFXButton fx:id="loginButton" layoutX="198.0" layoutY="317.0" onAction="#login" prefHeight="30.0" prefWidth="117.0" style="-fx-background-color: #1976D2;" text="LOGIN" textFill="WHITE">
+               <font>
+                  <Font size="13.0" />
+               </font>
+            </JFXButton>
+            <JFXRadioButton layoutX="145.0" layoutY="136.0" prefHeight="18.0" prefWidth="71.0" selected="true" text="Admin">
+               <selectedColor>
+                  <Color red="0.0900767520070076" green="0.6973684430122375" blue="0.05811403691768646" />
+               </selectedColor>
+               <unSelectedColor>
+                  <Color red="0.8552631735801697" green="0.03563596308231354" blue="0.03563596308231354" />
+               </unSelectedColor>
+               <toggleGroup>
+                  <ToggleGroup fx:id="LoginAs" />
+               </toggleGroup>
+            </JFXRadioButton>
+            <JFXRadioButton fx:id="LoginAsSuper" layoutX="231.0" layoutY="136.0" onAction="#LoginAsSuper" prefHeight="18.0" prefWidth="104.0" text="Super Admin" toggleGroup="$LoginAs">
+               <selectedColor>
+                  <Color red="0.0900767520070076" green="0.6973684430122375" blue="0.05811403691768646" />
+               </selectedColor>
+               <unSelectedColor>
+                  <Color red="0.8552631735801697" green="0.03563596308231354" blue="0.03563596308231354" />
+               </unSelectedColor>
+            </JFXRadioButton>
+         </children>
+      </AnchorPane>
+   </children>
+</AnchorPane>

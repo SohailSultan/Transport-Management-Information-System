@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.shape.Line?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane fx:id="contentPane" prefHeight="600.0" prefWidth="953.0" stylesheets="@../ManageVehicle/ManageVehicle.css" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="ManageConductor.UpdateConductorController">
+   <children>
+      <Pane layoutX="136.0" layoutY="83.0" prefHeight="491.0" prefWidth="681.0" style="-fx-background-color: #948454;" stylesheets="@../ManageVehicle/ManageVehicle.css">
+         <children>
+            <TextField fx:id="Bus_IDTextField" layoutX="333.0" layoutY="389.0" prefHeight="25.0" prefWidth="228.0" styleClass="VehicleTextfields" stylesheets="@../ManageVehicle/ManageVehicle.css" />
+            <Label layoutX="161.0" layoutY="394.0" prefHeight="21.0" prefWidth="155.0" styleClass="VehicleLabes" stylesheets="@../ManageVehicle/ManageVehicle.css" text="Bus Registration #" textFill="WHITE">
+               <font>
+                  <Font name="Century" size="17.0" />
+               </font>
+            </Label>
+            <Label layoutX="164.0" layoutY="124.0" prefHeight="21.0" prefWidth="106.0" styleClass="VehicleLabes" stylesheets="@../ManageVehicle/ManageVehicle.css" text="Name" textFill="WHITE">
+               <font>
+                  <Font name="Century" size="17.0" />
+               </font>
+            </Label>
+            <Label layoutX="161.0" layoutY="172.0" prefHeight="21.0" prefWidth="112.0" styleClass="VehicleLabes" stylesheets="@../ManageVehicle/ManageVehicle.css" text="Father Name" textFill="WHITE">
+               <font>
+                  <Font name="Century" size="17.0" />
+               </font>
+            </Label>
+            <Label layoutX="161.0" layoutY="218.0" prefHeight="21.0" prefWidth="112.0" styleClass="VehicleLabes" stylesheets="@../ManageVehicle/ManageVehicle.css" text="ID card" textFill="WHITE">
+               <font>
+                  <Font name="Century" size="17.0" />
+               </font>
+            </Label>
+            <Label layoutX="161.0" layoutY="262.0" prefHeight="21.0" prefWidth="112.0" styleClass="VehicleLabes" stylesheets="@../ManageVehicle/ManageVehicle.css" text="Age" textFill="WHITE">
+               <font>
+                  <Font name="Century" size="17.0" />
+               </font>
+            </Label>
+            <TextField fx:id="nameTextField" layoutX="333.0" layoutY="119.0" prefHeight="25.0" prefWidth="228.0" styleClass="VehicleTextfields" stylesheets="@../ManageVehicle/ManageVehicle.css" />
+            <TextField fx:id="fatherNameTextField" layoutX="333.0" layoutY="167.0" prefHeight="25.0" prefWidth="228.0" styleClass="VehicleTextfields" stylesheets="@../ManageVehicle/ManageVehicle.css" />
+            <TextField fx:id="idCardTextField" layoutX="333.0" layoutY="213.0" prefHeight="25.0" prefWidth="228.0" styleClass="VehicleTextfields" stylesheets="@../ManageVehicle/ManageVehicle.css" />
+            <TextField fx:id="ageTextField" layoutX="333.0" layoutY="257.0" prefHeight="25.0" prefWidth="228.0" styleClass="VehicleTextfields" stylesheets="@../ManageVehicle/ManageVehicle.css" />
+            <Label layoutX="161.0" layoutY="309.0" prefHeight="21.0" prefWidth="112.0" styleClass="VehicleLabes" stylesheets="@../ManageVehicle/ManageVehicle.css" text="Contact" textFill="WHITE">
+               <font>
+                  <Font name="Century" size="17.0" />
+               </font>
+            </Label>
+            <TextField fx:id="contactTextField" layoutX="333.0" layoutY="304.0" prefHeight="25.0" prefWidth="228.0" styleClass="VehicleTextfields" stylesheets="@../ManageVehicle/ManageVehicle.css" />
+            <Label layoutX="161.0" layoutY="351.0" prefHeight="21.0" prefWidth="112.0" styleClass="VehicleLabes" stylesheets="@../ManageVehicle/ManageVehicle.css" text="Salary" textFill="WHITE">
+               <font>
+                  <Font name="Century" size="17.0" />
+               </font>
+            </Label>
+            <TextField fx:id="salaryTextField" layoutX="333.0" layoutY="346.0" prefHeight="25.0" prefWidth="228.0" styleClass="VehicleTextfields" stylesheets="@../ManageVehicle/ManageVehicle.css" />
+            <Button fx:id="UpdateButton" layoutX="370.0" layoutY="440.0" mnemonicParsing="false" onAction="#UpdateRecord" prefHeight="27.0" prefWidth="155.0" style="-fx-background-radius: 30px; -fx-background-color: #642938; -fx-border-color: white; -fx-border-radius: 30px;" text="Update" textFill="WHITE" />
+            <TextField fx:id="ConductorIDTextField" layoutX="333.0" layoutY="28.0" prefHeight="29.0" prefWidth="228.0" style="-fx-background-radius: 30px;" styleClass="VehicleTextfields" stylesheets="@../ManageVehicle/ManageVehicle.css" />
+            <Label layoutX="40.0" layoutY="32.0" prefHeight="21.0" prefWidth="255.0" styleClass="VehicleLabes" stylesheets="@../ManageVehicle/ManageVehicle.css" text="Enter ID/CNIC of Conductor" textFill="WHITE">
+               <font>
+                  <Font name="Century" size="17.0" />
+               </font>
+            </Label>
+            <Line endX="542.0" layoutX="139.0" layoutY="89.0" startX="-139.0" stroke="WHITE" />
+            <Button fx:id="SearchButton" layoutX="578.0" layoutY="20.0" mnemonicParsing="false" onAction="#SearchRecord" prefHeight="37.0" prefWidth="55.0" style="-fx-background-radius: 100%; -fx-background-color: Transparent;">
+               <graphic>
+                  <ImageView fitHeight="32.0" fitWidth="39.0" pickOnBounds="true">
+                     <image>
+                        <Image url="@../Pictures/search-icon(new).png" />
+                     </image>
+                  </ImageView>
+               </graphic>
+            </Button>
+         </children>
+      </Pane>
+      <Label layoutX="361.0" layoutY="37.0" prefHeight="29.0" prefWidth="328.0" stylesheets="@../ManageVehicle/ManageVehicle.css" text="Update Conductor" textFill="WHITE">
+         <font>
+            <Font name="Broadway" size="25.0" />
+         </font>
+      </Label>
+   </children>
+</AnchorPane>

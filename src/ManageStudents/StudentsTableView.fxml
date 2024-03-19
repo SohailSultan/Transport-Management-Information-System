@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ScrollPane?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.effect.ColorAdjust?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane fx:id="contentPane" prefHeight="600.0" prefWidth="947.0" stylesheets="@../ManageVehicle/ManageVehicle.css" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="ManageStudents.StudentsTableController">
+   <children>
+      <ScrollPane layoutX="3.0" layoutY="72.0" prefHeight="484.0" prefWidth="947.0">
+         <content>
+            <TableView fx:id="StudentsTable" editable="true" prefHeight="506.0" prefWidth="1005.0" style="-fx-background-color: silver;" tableMenuButtonVisible="true">
+               <columns>
+                  <TableColumn fx:id="IdCol" prefWidth="75.0" text="Student ID" />
+                  <TableColumn fx:id="SAPIDCol" prefWidth="75.0" text="SAP ID" />
+                  <TableColumn fx:id="Name_Col" prefWidth="148.0" text="Student name" />
+                  <TableColumn fx:id="Father_NameCol" prefWidth="89.0" text="Father Name" />
+                  <TableColumn fx:id="GenderCol" prefWidth="107.0" text="Gender" />
+                  <TableColumn fx:id="AddressCol" prefWidth="107.0" text="Address" />
+                  <TableColumn fx:id="DOBCol" prefWidth="107.0" text="Date of birth" />
+                  <TableColumn fx:id="CNIC_Col" prefWidth="100.0" text="CNIC No." />
+                  <TableColumn fx:id="Contact_Col" prefWidth="100.0" text="Contact No." />
+                  <TableColumn fx:id="Semester_Col" prefWidth="100.0" text="Semester" />
+                  <TableColumn fx:id="Department_Col" prefWidth="100.0" text="Department" />
+                  <TableColumn fx:id="PicknDropCol" prefWidth="102.0" text="Pick n Drop Stop" />
+                  <TableColumn fx:id="Fee_StatusCol" prefWidth="182.0" text="Fee Paid Status" />
+                  <TableColumn fx:id="VehicleID_Col" prefWidth="102.0" text="Vehicle ID" />
+                  <TableColumn fx:id="RouteID_Col" prefWidth="182.0" text="Route ID" />
+               </columns>
+            </TableView>
+         </content>
+      </ScrollPane>
+      <Label layoutX="359.0" layoutY="28.0" prefHeight="29.0" prefWidth="260.0" stylesheets="@../ManageVehicle/ManageVehicle.css" text="Students List" textFill="WHITE">
+         <font>
+            <Font name="Broadway" size="25.0" />
+         </font>
+      </Label>
+      <ImageView fitHeight="52.0" fitWidth="90.0" layoutX="233.0" layoutY="14.0" pickOnBounds="true">
+         <image>
+            <Image url="@../Pictures/Students-icon.png" />
+         </image>
+         <effect>
+            <ColorAdjust brightness="1.0" />
+         </effect>
+      </ImageView>
+      <TextField fx:id="searchTextField" layoutX="599.0" layoutY="28.0" prefHeight="25.0" prefWidth="260.0" promptText="Enter ID/Name/SAP ID/Father/CNIC" />
+   </children>
+</AnchorPane>

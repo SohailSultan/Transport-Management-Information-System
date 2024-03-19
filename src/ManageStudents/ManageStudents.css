@@ -1,0 +1,69 @@
+.root{
+	-fx-background-color: linear-gradient(#7986CB,#E91E63, #009688);
+	-fx-border-color: white;
+	-fx-border-width: 3.0px;
+	-fx-border-insets: 3.0px;
+	-fx-background-radius: 10.0px;
+	-fx-border-radius: 10.0px;
+}
+
+#headinglabel{
+	-fx-text-fill: #F3E5F5;
+}
+#usernameTextfield{
+	-fx-border-color: linear-gradient(#7986CB,#E91E63, #009688);
+	-fx-border-radius: 30.0px;
+	-fx-background-color: white;
+	-fx-background-radius: 30.0px;
+	-fx-text-fill: Black;
+	-fx-prompt-text-fill: Green;
+}
+
+#passwordField{
+	-fx-border-color: linear-gradient(#7986CB,#E91E63, #009688);
+	-fx-border-radius: 30.0px;
+	-fx-background-color: white;
+    -fx-text-fill: black;
+    -fx-background-radius: 30.0px;
+    -fx-prompt-text-fill: Green;
+}
+#loginLabel{
+	-fx-text-fill: #F3E5F5;
+}
+
+#loginButton {
+    -fx-border-color: linear-gradient(#7986CB,#E91E63, #009688);
+    -fx-border-radius: 30.0px;
+    -fx-background-radius: 30.0;
+    -fx-background-insets: 0.0;
+    -fx-text-fill: #654321;
+    -fx-font-size: 16.0px;
+    
+    -fx-cursor: hand;
+}
+#loginButton:hover {
+	-fx-background-color: linear-gradient(#7986CB, #66BB6A);   
+}
+
+#minButton{
+	-fx-background-color: white;
+}
+
+#minButton:hover{
+	-fx-background-color: transparent;
+}
+
+#closeButton{
+	-fx-background-color: white;
+}
+#closeButton:hover{
+	-fx-background-color: #F44336;
+}
+
+#loginLabel:hover{
+	-fx-text-fill: Green;
+}
+
+#contentPane{
+	-fx-background-color: linear-gradient(#5C6BC0,#039BE5, #43A047);
+}

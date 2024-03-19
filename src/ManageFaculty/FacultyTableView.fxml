@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ScrollPane?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane fx:id="contentPane" prefHeight="595.0" prefWidth="930.0" stylesheets="@../ManageVehicle/ManageVehicle.css" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="ManageFaculty.FacultyTableController">
+   <children>
+      <ScrollPane layoutX="3.0" layoutY="81.0" prefHeight="482.0" prefWidth="924.0">
+         <content>
+            <TableView fx:id="FacultyTable" editable="true" prefHeight="506.0" prefWidth="923.0" style="-fx-background-color: silver;" tableMenuButtonVisible="true">
+               <columns>
+                  <TableColumn fx:id="Faculty_IDCol" prefWidth="100.0" text="Faculty ID" />
+                  <TableColumn fx:id="Faculty_TypeCol" prefWidth="100.0" text="Faculty Type" />
+                  <TableColumn fx:id="NameCol" prefWidth="110.0" text=" Name" />
+                  <TableColumn fx:id="Father_NameCol" prefWidth="110.0" text="Father Name" />
+                  <TableColumn fx:id="Contact_NoCol" prefWidth="100.0" text="Contact No." />
+                  <TableColumn fx:id="AddressCol" prefWidth="130.0" text="Address" />
+                  <TableColumn fx:id="DoBCol" prefWidth="100.0" text="Date of birth" />
+                  <TableColumn fx:id="CNICCol" text="CNIC No." />
+                  <TableColumn fx:id="DesignationCol" text="Designation" />
+                  <TableColumn fx:id="DepartmentCol" text="Department" />
+                  <TableColumn fx:id="Bank_AccountNoCol" prefWidth="102.0" text="Bank Account #" />
+                  <TableColumn fx:id="SalaryCol" prefWidth="70.0" text="Salary" />
+                  <TableColumn fx:id="VehicleIDCol" prefWidth="60.0" text="Vehicle ID" />
+                  <TableColumn fx:id="RouteIDCol" prefWidth="60.0" text="Route ID" />
+                  <TableColumn fx:id="FeeStatusCol" prefWidth="60.0" text="Fee Status" />
+               </columns>
+            </TableView>
+         </content>
+      </ScrollPane>
+      <Label layoutX="359.0" layoutY="28.0" prefHeight="29.0" prefWidth="260.0" stylesheets="@../ManageVehicle/ManageVehicle.css" text="Faculty Record" textFill="WHITE">
+         <font>
+            <Font name="Broadway" size="25.0" />
+         </font>
+      </Label>
+      <ImageView fitHeight="50.0" fitWidth="98.0" layoutX="238.0" layoutY="18.0" pickOnBounds="true">
+         <image>
+            <Image url="@../Pictures/Teacher-icon.png" />
+         </image>
+      </ImageView>
+      <TextField fx:id="searchTextField" layoutX="612.0" layoutY="30.0" prefHeight="25.0" prefWidth="260.0" promptText="Enter ID/Name/Father/CNIC/Desig.." />
+   </children>
+</AnchorPane>

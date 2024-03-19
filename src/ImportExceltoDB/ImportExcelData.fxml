@@ -1,0 +1,170 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import java.net.URL?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.Separator?>
+<?import javafx.scene.effect.ColorAdjust?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.shape.Line?>
+<?import javafx.scene.text.Font?>
+
+<Pane fx:id="screen_pane" prefHeight="680.0" prefWidth="944.0" style="-fx-border-width: 1; -fx-border-color: white;" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="ImportExceltoDB.ImportExcelDataController">
+   <stylesheets>
+      <URL value="@../Dashboard/Dashboard.css" />
+      <URL value="@../ViewRecords/ViewRecords.css" />
+   </stylesheets>
+   <children>
+      <Label alignment="CENTER" layoutX="258.0" layoutY="60.0" prefHeight="39.0" prefWidth="411.0" text="Import Data from Excel As:" textFill="WHITE">
+         <font>
+            <Font name="Rockwell Extra Bold" size="23.0" />
+         </font>
+      </Label>
+      <JFXButton alignment="TOP_CENTER" buttonType="RAISED" contentDisplay="TOP" layoutX="17.0" layoutY="204.0" onAction="#ImportVehiclesData" opacity="0.75" prefHeight="103.0" prefWidth="210.0" ripplerFill="WHITE" style="-fx-background-color: #006064; -fx-background-radius: 30 0 30 10; -fx-border-color: white; -fx-border-radius: 30 0 30 10;" text="VEHICLES" textFill="WHITE">
+         <font>
+            <Font name="Rockwell Extra Bold" size="15.0" />
+         </font>
+         <graphic>
+            <ImageView fitHeight="53.0" fitWidth="73.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../Pictures/bus-icon(pink).png" />
+               </image>
+               <effect>
+                  <ColorAdjust brightness="1.0" />
+               </effect>
+            </ImageView>
+         </graphic>
+      </JFXButton>
+      <Separator layoutX="-6.0" layoutY="153.0" prefHeight="2.0" prefWidth="951.0" />
+      <JFXButton alignment="TOP_CENTER" buttonType="RAISED" contentDisplay="TOP" layoutX="253.0" layoutY="204.0" onAction="#ImportRoutesData" opacity="0.75" prefHeight="103.0" prefWidth="210.0" ripplerFill="WHITE" style="-fx-background-color: #006064; -fx-background-radius: 30 0 30 10; -fx-border-color: white; -fx-border-radius: 30 0 30 10;" text="ROUTES" textFill="WHITE">
+         <font>
+            <Font name="Rockwell Extra Bold" size="15.0" />
+         </font>
+         <graphic>
+            <ImageView fitHeight="53.0" fitWidth="73.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../Pictures/route-icon.png" />
+               </image>
+               <effect>
+                  <ColorAdjust brightness="1.0" />
+               </effect>
+            </ImageView>
+         </graphic>
+      </JFXButton>
+      <JFXButton alignment="TOP_CENTER" buttonType="RAISED" contentDisplay="TOP" layoutX="253.0" layoutY="343.0" onAction="#ImportConductorsData" opacity="0.75" prefHeight="103.0" prefWidth="210.0" ripplerFill="WHITE" style="-fx-background-color: #00695C; -fx-background-radius: 30 0 30 10; -fx-border-color: white; -fx-border-radius: 30 0 30 10;" text="CONDUCTORS" textFill="WHITE">
+         <font>
+            <Font name="Rockwell Extra Bold" size="15.0" />
+         </font>
+         <graphic>
+            <ImageView fitHeight="53.0" fitWidth="73.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../Pictures/conductor-icon.png" />
+               </image>
+            </ImageView>
+         </graphic>
+      </JFXButton>
+      <JFXButton alignment="TOP_CENTER" buttonType="RAISED" contentDisplay="TOP" layoutX="17.0" layoutY="343.0" onAction="#ImportDriversData" opacity="0.75" prefHeight="103.0" prefWidth="210.0" ripplerFill="WHITE" style="-fx-background-color: #00695C; -fx-background-radius: 30 0 30 10; -fx-border-color: white; -fx-border-radius: 30 0 30 10;" text="DRIVERS" textFill="WHITE">
+         <font>
+            <Font name="Rockwell Extra Bold" size="15.0" />
+         </font>
+         <graphic>
+            <ImageView fitHeight="53.0" fitWidth="73.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../Pictures/Transport-Driver-icon%20(1).png" />
+               </image>
+               <effect>
+                  <ColorAdjust brightness="1.0" />
+               </effect>
+            </ImageView>
+         </graphic>
+      </JFXButton>
+      <JFXButton alignment="TOP_CENTER" buttonType="RAISED" contentDisplay="TOP" layoutX="717.0" layoutY="204.0" onAction="#ImportFacultyData" opacity="0.75" prefHeight="103.0" prefWidth="210.0" ripplerFill="WHITE" style="-fx-background-color: #006064; -fx-background-radius: 30 0 30 10; -fx-border-color: white; -fx-border-radius: 30 0 30 10;" text="FACULTY" textFill="WHITE">
+         <font>
+            <Font name="Rockwell Extra Bold" size="15.0" />
+         </font>
+         <graphic>
+            <ImageView fitHeight="53.0" fitWidth="73.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../Pictures/teacherICon.png" />
+               </image>
+            </ImageView>
+         </graphic>
+      </JFXButton>
+      <JFXButton alignment="TOP_CENTER" buttonType="RAISED" contentDisplay="TOP" layoutX="487.0" layoutY="204.0" onAction="#ImportStudentsData" opacity="0.75" prefHeight="103.0" prefWidth="210.0" ripplerFill="WHITE" style="-fx-background-color: #006064; -fx-background-radius: 30 0 30 10; -fx-border-color: white; -fx-border-radius: 30 0 30 10;" text="STUDENTS" textFill="WHITE">
+         <font>
+            <Font name="Rockwell Extra Bold" size="15.0" />
+         </font>
+         <graphic>
+            <ImageView fitHeight="53.0" fitWidth="73.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../Pictures/Student-Flat-Light-icon.png" />
+               </image>
+               <effect>
+                  <ColorAdjust brightness="1.0" />
+               </effect>
+            </ImageView>
+         </graphic>
+      </JFXButton>
+      <JFXButton alignment="TOP_CENTER" buttonType="RAISED" contentDisplay="TOP" layoutX="487.0" layoutY="343.0" onAction="#ImportFeeData" opacity="0.75" prefHeight="103.0" prefWidth="210.0" ripplerFill="WHITE" style="-fx-background-color: #00695C; -fx-background-radius: 30 0 30 10; -fx-border-color: white; -fx-border-radius: 30 0 30 10;" text="FEE RECORD" textFill="WHITE">
+         <font>
+            <Font name="Rockwell Extra Bold" size="15.0" />
+         </font>
+         <graphic>
+            <ImageView fitHeight="53.0" fitWidth="73.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../Pictures/Cash-icon.png" />
+               </image>
+            </ImageView>
+         </graphic>
+      </JFXButton>
+      <JFXButton alignment="TOP_CENTER" buttonType="RAISED" contentDisplay="TOP" layoutX="253.0" layoutY="478.0" onAction="#ImportExpenseData" opacity="0.75" prefHeight="103.0" prefWidth="210.0" ripplerFill="WHITE" style="-fx-background-color: #01579B; -fx-background-radius: 30 0 30 10; -fx-border-color: white; -fx-border-radius: 30 0 30 10;" text="EXPENSE" textFill="WHITE">
+         <font>
+            <Font name="Rockwell Extra Bold" size="15.0" />
+         </font>
+         <graphic>
+            <ImageView fitHeight="53.0" fitWidth="73.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../Pictures/Expense-icon.png" />
+               </image>
+            </ImageView>
+         </graphic>
+      </JFXButton>
+      <JFXButton alignment="TOP_CENTER" buttonType="RAISED" contentDisplay="TOP" layoutX="717.0" layoutY="343.0" onAction="#ImportMaintenanceData" opacity="0.75" prefHeight="103.0" prefWidth="210.0" ripplerFill="WHITE" style="-fx-background-color: #00695C; -fx-background-radius: 30 0 30 10; -fx-border-color: white; -fx-border-radius: 30 0 30 10;" text="MAINTENANCE" textFill="WHITE">
+         <font>
+            <Font name="Rockwell Extra Bold" size="15.0" />
+         </font>
+         <graphic>
+            <ImageView fitHeight="53.0" fitWidth="73.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../Pictures/Maintenance-icon.png" />
+               </image>
+               <effect>
+                  <ColorAdjust brightness="1.0" />
+               </effect>
+            </ImageView>
+         </graphic>
+      </JFXButton>
+      <JFXButton alignment="TOP_CENTER" buttonType="RAISED" contentDisplay="TOP" layoutX="17.0" layoutY="478.0" onAction="#ImportReservationData" opacity="0.75" prefHeight="103.0" prefWidth="210.0" ripplerFill="WHITE" style="-fx-background-color: #01579B; -fx-background-radius: 30 0 30 10; -fx-border-color: white; -fx-border-radius: 30 0 30 10;" text="RESERVATION" textFill="WHITE">
+         <font>
+            <Font name="Rockwell Extra Bold" size="15.0" />
+         </font>
+         <graphic>
+            <ImageView fitHeight="53.0" fitWidth="73.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../Pictures/reservation-icon.png" />
+               </image>
+               <effect>
+                  <ColorAdjust brightness="1.0" />
+               </effect>
+            </ImageView>
+         </graphic>
+      </JFXButton>
+      <Line endX="880.0" layoutX="62.0" layoutY="325.0" opacity="0.09" startX="-59.0" stroke="#6f538c" strokeType="OUTSIDE" />
+      <Line endX="880.0" layoutX="62.0" layoutY="463.0" opacity="0.25" startX="-59.0" stroke="#6f538c" strokeType="OUTSIDE" />
+      <Line endX="11.0" endY="472.0" fill="WHITE" layoutX="227.0" layoutY="155.0" opacity="0.09" startX="11.0" startY="4.0" stroke="#6f538c" strokeType="OUTSIDE" />
+      <Line endX="17.0" endY="473.0" fill="WHITE" layoutX="458.0" layoutY="154.0" opacity="0.09" startX="17.0" startY="4.0" stroke="#6f538c" strokeType="OUTSIDE" />
+      <Line endX="26.0" endY="324.0" fill="WHITE" layoutX="682.0" layoutY="138.0" opacity="0.09" startX="26.0" startY="21.0" stroke="#6f538c" strokeType="OUTSIDE" />
+   </children>
+</Pane>

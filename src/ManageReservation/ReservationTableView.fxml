@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ScrollPane?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.effect.ColorAdjust?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane fx:id="contentPane" prefHeight="600.0" prefWidth="947.0" stylesheets="@../ManageVehicle/ManageVehicle.css" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="ManageReservation.ReservationTableController">
+   <children>
+      <ScrollPane layoutX="2.0" layoutY="72.0" prefHeight="484.0" prefWidth="941.0">
+         <content>
+            <TableView fx:id="ReservationTable" editable="true" prefHeight="506.0" prefWidth="966.0" style="-fx-background-color: silver;" tableMenuButtonVisible="true">
+               <columns>
+                  <TableColumn fx:id="IDCol" prefWidth="46.0" text=" ID" />
+                  <TableColumn fx:id="Event_NameCol" prefWidth="164.0" text="Event Name" />
+                  <TableColumn fx:id="Event_TypeCol" prefWidth="114.0" text="Event Type" />
+                  <TableColumn fx:id="Holder_NameCol" prefWidth="140.0" text="Event Holder Name" />
+                  <TableColumn fx:id="Destination_NameCol" prefWidth="127.0" text="Destination Name" />
+                  <TableColumn fx:id="Scedule_DateCol" prefWidth="127.0" text="Scedule Date" />
+                  <TableColumn fx:id="Departure1Col" prefWidth="107.0" text="Departure Time(University)" />
+                  <TableColumn fx:id="Arrival_Time1Col" prefWidth="107.0" text="Arrival Time(Destination)" />
+                  <TableColumn fx:id="Departure2Col" prefWidth="107.0" text="Departure Time(Destination)" />
+                  <TableColumn fx:id="Arrival_Time2Col" prefWidth="107.0" text="Arrival Time(University)" />
+                  <TableColumn fx:id="Vehcle_RegCol" prefWidth="60.0" text="Vehcle Reg No." />
+                  <TableColumn fx:id="DriverIDCol" prefWidth="60.0" text="Driver ID" />
+               </columns>
+            </TableView>
+         </content>
+      </ScrollPane>
+      <Label layoutX="359.0" layoutY="28.0" prefHeight="29.0" prefWidth="260.0" stylesheets="@../ManageVehicle/ManageVehicle.css" text="Reservation List" textFill="WHITE">
+         <font>
+            <Font name="Broadway" size="25.0" />
+         </font>
+      </Label>
+      <ImageView fitHeight="47.0" fitWidth="101.0" layoutX="241.0" layoutY="17.0" pickOnBounds="true">
+         <image>
+            <Image url="@../Pictures/reservation-icon.png" />
+         </image>
+         <effect>
+            <ColorAdjust brightness="1.0" />
+         </effect>
+      </ImageView>
+      <TextField fx:id="searchTextField" layoutX="619.0" layoutY="30.0" prefHeight="25.0" prefWidth="260.0" promptText="Enter ID/EventName/H.Name/Date" />
+   </children>
+</AnchorPane>

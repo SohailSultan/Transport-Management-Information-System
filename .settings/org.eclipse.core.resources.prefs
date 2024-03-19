@@ -1,0 +1,13 @@
+eclipse.preferences.version=1
+encoding//src/GenerateReports/JasperFiles/Maintenance_Pending.jrxml=UTF-8
+encoding//src/GenerateReports/JasperFiles/Reservation_Completed.jrxml=UTF-8
+encoding//src/GenerateReports/JrxmlFiles/AllDrivers.jrxml=UTF-8
+encoding//src/GenerateReports/JrxmlFiles/AllFaculty.jrxml=UTF-8
+encoding//src/GenerateReports/JrxmlFiles/AllFeeRecord.jrxml=UTF-8
+encoding//src/GenerateReports/JrxmlFiles/AllRoutes.jrxml=UTF-8
+encoding//src/GenerateReports/JrxmlFiles/AllStudents.jrxml=UTF-8
+encoding//src/GenerateReports/JrxmlFiles/ConductorData.jrxml=UTF-8
+encoding//src/GenerateReports/JrxmlFiles/FeeRecord_By_Month.jrxml=UTF-8
+encoding//src/GenerateReports/JrxmlFiles/Maintenance.jrxml=UTF-8
+encoding//src/GenerateReports/JrxmlFiles/VehiclesData.jrxml=UTF-8
+encoding/<project>=UTF-8

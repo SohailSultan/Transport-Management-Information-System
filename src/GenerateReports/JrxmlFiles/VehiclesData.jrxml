@@ -1,0 +1,393 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Created with Jaspersoft Studio version 6.20.5.final using JasperReports Library version 6.20.5-3efcf2e67f959db3888d79f73dde2dbd7acb4f8e  -->
+<jasperReport xmlns="http://jasperreports.sourceforge.net/jasperreports" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://jasperreports.sourceforge.net/jasperreports http://jasperreports.sourceforge.net/xsd/jasperreport.xsd" name="VehiclesData" pageWidth="842" pageHeight="595" orientation="Landscape" columnWidth="802" leftMargin="20" rightMargin="20" topMargin="20" bottomMargin="0" uuid="e115bc59-fd0f-446b-a585-04725e27d7f0">
+	<property name="com.jaspersoft.studio.data.sql.tables" value=""/>
+	<property name="com.jaspersoft.studio.data.defaultdataadapter" value="SQLLite Transport Syatem"/>
+	<style name="Title" fontName="Arial" fontSize="26" isBold="true"/>
+	<style name="SubTitle" forecolor="#666666" fontName="Arial" fontSize="18"/>
+	<style name="Column header" forecolor="#FFFFFF" fontName="Arial" fontSize="12" isBold="true"/>
+	<style name="Detail" fontName="Arial" fontSize="12"/>
+	<queryString language="SQL">
+		<![CDATA[SELECT registration_number,
+	token_status,
+	vehicle_model,
+	vehicle_capacity,
+	vehicle_occupation,
+	token_issue_date,
+	driver_id,
+	vehicle_type,
+	accidental_status,
+	fuel_efficiency,
+	token_number,
+	vehicle_id,
+	token_type,
+	route_id,
+	token_expiry_date
+FROM vehicles]]>
+	</queryString>
+	<field name="vehicle_id" class="java.lang.Object">
+		<property name="com.jaspersoft.studio.field.name" value="vehicle_id"/>
+		<property name="com.jaspersoft.studio.field.label" value="vehicle_id"/>
+		<property name="com.jaspersoft.studio.field.tree.path" value="vehicles"/>
+	</field>
+	<field name="registration_number" class="java.lang.Object">
+		<property name="com.jaspersoft.studio.field.name" value="registration_number"/>
+		<property name="com.jaspersoft.studio.field.label" value="registration_number"/>
+		<property name="com.jaspersoft.studio.field.tree.path" value="vehicles"/>
+	</field>
+	<field name="vehicle_model" class="java.lang.Object">
+		<property name="com.jaspersoft.studio.field.name" value="vehicle_model"/>
+		<property name="com.jaspersoft.studio.field.label" value="vehicle_model"/>
+		<property name="com.jaspersoft.studio.field.tree.path" value="vehicles"/>
+	</field>
+	<field name="vehicle_type" class="java.lang.Object">
+		<property name="com.jaspersoft.studio.field.name" value="vehicle_type"/>
+		<property name="com.jaspersoft.studio.field.label" value="vehicle_type"/>
+		<property name="com.jaspersoft.studio.field.tree.path" value="vehicles"/>
+	</field>
+	<field name="vehicle_occupation" class="java.lang.Object">
+		<property name="com.jaspersoft.studio.field.name" value="vehicle_occupation"/>
+		<property name="com.jaspersoft.studio.field.label" value="vehicle_occupation"/>
+		<property name="com.jaspersoft.studio.field.tree.path" value="vehicles"/>
+	</field>
+	<field name="vehicle_capacity" class="java.lang.Object">
+		<property name="com.jaspersoft.studio.field.name" value="vehicle_capacity"/>
+		<property name="com.jaspersoft.studio.field.label" value="vehicle_capacity"/>
+		<property name="com.jaspersoft.studio.field.tree.path" value="vehicles"/>
+	</field>
+	<field name="accidental_status" class="java.lang.Object">
+		<property name="com.jaspersoft.studio.field.name" value="accidental_status"/>
+		<property name="com.jaspersoft.studio.field.label" value="accidental_status"/>
+		<property name="com.jaspersoft.studio.field.tree.path" value="vehicles"/>
+	</field>
+	<field name="fuel_efficiency" class="java.lang.Object">
+		<property name="com.jaspersoft.studio.field.name" value="fuel_efficiency"/>
+		<property name="com.jaspersoft.studio.field.label" value="fuel_efficiency"/>
+		<property name="com.jaspersoft.studio.field.tree.path" value="vehicles"/>
+	</field>
+	<field name="token_status" class="java.lang.Object">
+		<property name="com.jaspersoft.studio.field.name" value="token_status"/>
+		<property name="com.jaspersoft.studio.field.label" value="token_status"/>
+		<property name="com.jaspersoft.studio.field.tree.path" value="vehicles"/>
+	</field>
+	<field name="token_number" class="java.lang.Object">
+		<property name="com.jaspersoft.studio.field.name" value="token_number"/>
+		<property name="com.jaspersoft.studio.field.label" value="token_number"/>
+		<property name="com.jaspersoft.studio.field.tree.path" value="vehicles"/>
+	</field>
+	<field name="token_type" class="java.lang.Object">
+		<property name="com.jaspersoft.studio.field.name" value="token_type"/>
+		<property name="com.jaspersoft.studio.field.label" value="token_type"/>
+		<property name="com.jaspersoft.studio.field.tree.path" value="vehicles"/>
+	</field>
+	<field name="token_issue_date" class="java.lang.Object">
+		<property name="com.jaspersoft.studio.field.name" value="token_issue_date"/>
+		<property name="com.jaspersoft.studio.field.label" value="token_issue_date"/>
+		<property name="com.jaspersoft.studio.field.tree.path" value="vehicles"/>
+	</field>
+	<field name="token_expiry_date" class="java.lang.Object">
+		<property name="com.jaspersoft.studio.field.name" value="token_expiry_date"/>
+		<property name="com.jaspersoft.studio.field.label" value="token_expiry_date"/>
+		<property name="com.jaspersoft.studio.field.tree.path" value="vehicles"/>
+	</field>
+	<field name="driver_id" class="java.lang.Object">
+		<property name="com.jaspersoft.studio.field.name" value="driver_id"/>
+		<property name="com.jaspersoft.studio.field.label" value="driver_id"/>
+		<property name="com.jaspersoft.studio.field.tree.path" value="vehicles"/>
+	</field>
+	<field name="route_id" class="java.lang.Object">
+		<property name="com.jaspersoft.studio.field.name" value="route_id"/>
+		<property name="com.jaspersoft.studio.field.label" value="route_id"/>
+		<property name="com.jaspersoft.studio.field.tree.path" value="vehicles"/>
+	</field>
+	<title>
+		<band height="104" splitType="Stretch">
+			<staticText>
+				<reportElement style="Title" x="190" y="2" width="481" height="65" uuid="1dcadd54-7d50-4470-85ed-189e4d910b25"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font size="54" isBold="false"/>
+				</textElement>
+				<text><![CDATA[TMIS For IIUI]]></text>
+			</staticText>
+			<staticText>
+				<reportElement style="SubTitle" x="232" y="67" width="388" height="37" uuid="862cb50c-5a5e-4906-a495-226e25115fb6"/>
+				<textElement textAlignment="Center">
+					<font size="26"/>
+				</textElement>
+				<text><![CDATA[Vehicles Record]]></text>
+			</staticText>
+			<image>
+				<reportElement x="0" y="0" width="225" height="70" uuid="51e2031b-2f3f-49bc-8907-7e7a73209f44"/>
+				<imageExpression><![CDATA["src/GenerateReports/JrxmlFiles/University-Logo.png"]]></imageExpression>
+			</image>
+		</band>
+	</title>
+	<pageHeader>
+		<band splitType="Stretch"/>
+	</pageHeader>
+	<columnHeader>
+		<band height="56" splitType="Stretch">
+			<property name="com.jaspersoft.studio.layout" value="com.jaspersoft.studio.editor.layout.FreeLayout"/>
+			<frame>
+				<reportElement mode="Opaque" x="-10" y="5" width="812" height="45" backcolor="#666666" uuid="35d90a9b-bb7e-4ec4-bfa2-68be1967d6b2"/>
+				<staticText>
+					<reportElement style="Column header" x="10" y="0" width="37" height="40" uuid="b0c68b4c-80d9-454a-b79a-65e9db73d402">
+						<property name="com.jaspersoft.studio.spreadsheet.connectionID" value="467be53b-60df-4fe2-a5e1-c06eb06d40ef"/>
+					</reportElement>
+					<textElement textAlignment="Center" verticalAlignment="Middle"/>
+					<text><![CDATA[ID]]></text>
+				</staticText>
+				<staticText>
+					<reportElement style="Column header" x="47" y="0" width="47" height="40" uuid="6ca8aeb0-ab88-4cf4-aba0-2f8e55093cea">
+						<property name="com.jaspersoft.studio.spreadsheet.connectionID" value="de3ac5cd-c6c1-481a-8660-1a83bd554544"/>
+					</reportElement>
+					<textElement textAlignment="Center" verticalAlignment="Middle"/>
+					<text><![CDATA[Reg. No]]></text>
+				</staticText>
+				<staticText>
+					<reportElement style="Column header" x="94" y="0" width="47" height="40" uuid="f64a6a77-2adb-4045-8859-8f063aeaa544">
+						<property name="com.jaspersoft.studio.spreadsheet.connectionID" value="7ef43fb8-7e73-48dd-9251-969d18f4aaa4"/>
+					</reportElement>
+					<textElement textAlignment="Center" verticalAlignment="Middle"/>
+					<text><![CDATA[Model]]></text>
+				</staticText>
+				<staticText>
+					<reportElement style="Column header" x="141" y="0" width="47" height="40" uuid="be5f69cc-8629-4503-92e7-424b12e8e432">
+						<property name="com.jaspersoft.studio.spreadsheet.connectionID" value="d93b9b2d-468e-4974-9f41-7ce32f4e4dc7"/>
+					</reportElement>
+					<textElement textAlignment="Center" verticalAlignment="Middle"/>
+					<text><![CDATA[Type]]></text>
+				</staticText>
+				<staticText>
+					<reportElement style="Column header" x="188" y="0" width="47" height="40" uuid="c668cb6d-a129-40ab-b40d-ef7959aeafad">
+						<property name="com.jaspersoft.studio.spreadsheet.connectionID" value="44442eb9-9478-4ac7-9094-6c9550a5940b"/>
+					</reportElement>
+					<textElement textAlignment="Center" verticalAlignment="Middle"/>
+					<text><![CDATA[Seat Occupation]]></text>
+				</staticText>
+				<staticText>
+					<reportElement style="Column header" x="235" y="0" width="47" height="40" uuid="1e5fa334-5db9-485b-9ab3-41429dcc6c51">
+						<property name="com.jaspersoft.studio.spreadsheet.connectionID" value="a724311e-d518-44a6-85e8-c0c8243a6c53"/>
+					</reportElement>
+					<textElement textAlignment="Center" verticalAlignment="Middle"/>
+					<text><![CDATA[Seat capacity]]></text>
+				</staticText>
+				<staticText>
+					<reportElement style="Column header" x="282" y="0" width="47" height="40" uuid="6f757f40-a456-4d7c-9203-6494f832b2f6">
+						<property name="com.jaspersoft.studio.spreadsheet.connectionID" value="fc5eccb6-9442-4f51-81e3-85752d525ae2"/>
+					</reportElement>
+					<textElement textAlignment="Center" verticalAlignment="Middle"/>
+					<text><![CDATA[Acidental Status]]></text>
+				</staticText>
+				<staticText>
+					<reportElement style="Column header" x="329" y="0" width="47" height="40" uuid="b4531048-8f1f-4fa6-b4fa-2963b496eb2c">
+						<property name="com.jaspersoft.studio.spreadsheet.connectionID" value="8a519b4a-2128-4326-8588-6db3893293fb"/>
+					</reportElement>
+					<textElement textAlignment="Center" verticalAlignment="Middle"/>
+					<text><![CDATA[Fuel Efficiency]]></text>
+				</staticText>
+				<staticText>
+					<reportElement style="Column header" x="376" y="0" width="47" height="40" uuid="1ece7fad-2814-4467-8f99-0413c49cab6b">
+						<property name="com.jaspersoft.studio.spreadsheet.connectionID" value="ae299124-e398-4d39-b68b-2efd810b2ed3"/>
+					</reportElement>
+					<textElement textAlignment="Center" verticalAlignment="Middle"/>
+					<text><![CDATA[Token Status]]></text>
+				</staticText>
+				<staticText>
+					<reportElement style="Column header" x="423" y="0" width="47" height="40" uuid="15cbbd1a-e756-4d7e-a39d-4a6c66a8dfc2">
+						<property name="com.jaspersoft.studio.spreadsheet.connectionID" value="a5de12e6-2c43-430d-8177-fedebe51305c"/>
+					</reportElement>
+					<textElement textAlignment="Center" verticalAlignment="Middle"/>
+					<text><![CDATA[Token No.]]></text>
+				</staticText>
+				<staticText>
+					<reportElement style="Column header" x="470" y="0" width="60" height="40" uuid="f345c070-7255-4012-9007-f8bc8ed61d1b">
+						<property name="com.jaspersoft.studio.spreadsheet.connectionID" value="593f051c-f6e7-48b2-9834-215d39168201"/>
+					</reportElement>
+					<textElement textAlignment="Center" verticalAlignment="Middle"/>
+					<text><![CDATA[token type]]></text>
+				</staticText>
+				<staticText>
+					<reportElement style="Column header" x="530" y="0" width="93" height="40" uuid="3de6228d-5416-4a5c-a86b-2ab01831bcd5">
+						<property name="com.jaspersoft.studio.spreadsheet.connectionID" value="317a394c-2064-4113-9151-f7d8959e754c"/>
+					</reportElement>
+					<textElement textAlignment="Center" verticalAlignment="Middle"/>
+					<text><![CDATA[Token issue date]]></text>
+				</staticText>
+				<staticText>
+					<reportElement style="Column header" x="620" y="0" width="86" height="40" uuid="aab8a66b-ae88-4c24-a649-b6616172bdba">
+						<property name="com.jaspersoft.studio.spreadsheet.connectionID" value="a7517fa0-4c3b-480a-a8f5-661e50bdedc9"/>
+					</reportElement>
+					<textElement textAlignment="Center" verticalAlignment="Middle"/>
+					<text><![CDATA[Token expiry date]]></text>
+				</staticText>
+				<staticText>
+					<reportElement style="Column header" x="710" y="0" width="47" height="40" uuid="1c1ef5fc-7364-4df8-bc23-9eba8e61ece2">
+						<property name="com.jaspersoft.studio.spreadsheet.connectionID" value="cf2671c9-4c93-4fa1-bfab-83cac638cd4e"/>
+					</reportElement>
+					<textElement textAlignment="Center" verticalAlignment="Middle"/>
+					<text><![CDATA[Driver id]]></text>
+				</staticText>
+				<staticText>
+					<reportElement style="Column header" x="755" y="0" width="47" height="40" uuid="46055ad2-7b57-4238-bd92-fcfaaed4ecaf">
+						<property name="com.jaspersoft.studio.spreadsheet.connectionID" value="b6ebba21-38aa-4fc0-94e3-29e4197f003f"/>
+					</reportElement>
+					<textElement textAlignment="Center" verticalAlignment="Middle"/>
+					<text><![CDATA[Route ID]]></text>
+				</staticText>
+			</frame>
+		</band>
+	</columnHeader>
+	<detail>
+		<band height="21" splitType="Stretch">
+			<frame>
+				<reportElement x="50" y="1" width="752" height="15" uuid="89a3da05-fdde-4ffe-965f-cc476f72e3ab"/>
+				<textField>
+					<reportElement style="Detail" x="-50" y="2" width="38" height="15" uuid="7b533489-604b-4085-8c88-51f57f6b2ef7">
+						<property name="com.jaspersoft.studio.spreadsheet.connectionID" value="467be53b-60df-4fe2-a5e1-c06eb06d40ef"/>
+					</reportElement>
+					<textElement textAlignment="Center"/>
+					<textFieldExpression><![CDATA[$F{vehicle_id}]]></textFieldExpression>
+				</textField>
+				<textField>
+					<reportElement style="Detail" x="-17" y="-1" width="47" height="15" uuid="e8d0ea17-85eb-47cf-9fbb-da8be7856da5">
+						<property name="com.jaspersoft.studio.spreadsheet.connectionID" value="de3ac5cd-c6c1-481a-8660-1a83bd554544"/>
+					</reportElement>
+					<textElement textAlignment="Center"/>
+					<textFieldExpression><![CDATA[$F{registration_number}]]></textFieldExpression>
+				</textField>
+				<textField>
+					<reportElement style="Detail" x="34" y="0" width="47" height="15" uuid="f72b9a6b-5f5f-494c-8504-b1fe6ed33a3b">
+						<property name="com.jaspersoft.studio.spreadsheet.connectionID" value="7ef43fb8-7e73-48dd-9251-969d18f4aaa4"/>
+					</reportElement>
+					<textElement textAlignment="Center"/>
+					<textFieldExpression><![CDATA[$F{vehicle_model}]]></textFieldExpression>
+				</textField>
+				<textField>
+					<reportElement style="Detail" x="80" y="0" width="47" height="15" uuid="99ad74ac-7de5-4128-adcc-ccf65c2b7298">
+						<property name="com.jaspersoft.studio.spreadsheet.connectionID" value="d93b9b2d-468e-4974-9f41-7ce32f4e4dc7"/>
+					</reportElement>
+					<textElement textAlignment="Center"/>
+					<textFieldExpression><![CDATA[$F{vehicle_type}]]></textFieldExpression>
+				</textField>
+				<textField>
+					<reportElement style="Detail" x="130" y="-1" width="47" height="15" uuid="b6096b6e-9545-44a3-ae5f-da7656704cf1">
+						<property name="com.jaspersoft.studio.spreadsheet.connectionID" value="44442eb9-9478-4ac7-9094-6c9550a5940b"/>
+					</reportElement>
+					<textElement textAlignment="Center"/>
+					<textFieldExpression><![CDATA[$F{vehicle_occupation}]]></textFieldExpression>
+				</textField>
+				<textField>
+					<reportElement style="Detail" x="180" y="-1" width="47" height="15" uuid="4a95d083-863b-40b9-ae35-416230d00bd1">
+						<property name="com.jaspersoft.studio.spreadsheet.connectionID" value="a724311e-d518-44a6-85e8-c0c8243a6c53"/>
+					</reportElement>
+					<textElement textAlignment="Center"/>
+					<textFieldExpression><![CDATA[$F{vehicle_capacity}]]></textFieldExpression>
+				</textField>
+				<textField>
+					<reportElement style="Detail" x="220" y="0" width="47" height="15" uuid="8f18028b-ed6a-4de5-92e9-9d3e31ad46e9">
+						<property name="com.jaspersoft.studio.spreadsheet.connectionID" value="fc5eccb6-9442-4f51-81e3-85752d525ae2"/>
+					</reportElement>
+					<textElement textAlignment="Center"/>
+					<textFieldExpression><![CDATA[$F{accidental_status}]]></textFieldExpression>
+				</textField>
+				<textField>
+					<reportElement style="Detail" x="267" y="-1" width="47" height="15" uuid="40bce2cd-0531-4e43-b417-9c875d055017">
+						<property name="com.jaspersoft.studio.spreadsheet.connectionID" value="8a519b4a-2128-4326-8588-6db3893293fb"/>
+					</reportElement>
+					<textElement textAlignment="Center"/>
+					<textFieldExpression><![CDATA[$F{fuel_efficiency}]]></textFieldExpression>
+				</textField>
+				<textField>
+					<reportElement style="Detail" x="314" y="-1" width="47" height="15" uuid="9f2ed3bf-e70c-4519-b85b-0783931edf48">
+						<property name="com.jaspersoft.studio.spreadsheet.connectionID" value="ae299124-e398-4d39-b68b-2efd810b2ed3"/>
+					</reportElement>
+					<textElement textAlignment="Center"/>
+					<textFieldExpression><![CDATA[$F{token_status}]]></textFieldExpression>
+				</textField>
+				<textField>
+					<reportElement style="Detail" x="370" y="-1" width="47" height="15" uuid="abb3f931-8d3f-477d-802c-b71186786ef7">
+						<property name="com.jaspersoft.studio.spreadsheet.connectionID" value="a5de12e6-2c43-430d-8177-fedebe51305c"/>
+					</reportElement>
+					<textElement textAlignment="Center"/>
+					<textFieldExpression><![CDATA[$F{token_number}]]></textFieldExpression>
+				</textField>
+				<textField>
+					<reportElement style="Detail" x="420" y="0" width="47" height="15" uuid="7545c923-b015-49eb-8219-f62c714c9608">
+						<property name="com.jaspersoft.studio.spreadsheet.connectionID" value="593f051c-f6e7-48b2-9834-215d39168201"/>
+					</reportElement>
+					<textElement textAlignment="Center"/>
+					<textFieldExpression><![CDATA[$F{token_type}]]></textFieldExpression>
+				</textField>
+				<textField>
+					<reportElement style="Detail" x="470" y="0" width="90" height="15" uuid="f3edb05f-9729-4d66-a992-4fefc84e4e42">
+						<property name="com.jaspersoft.studio.spreadsheet.connectionID" value="317a394c-2064-4113-9151-f7d8959e754c"/>
+					</reportElement>
+					<textElement textAlignment="Center"/>
+					<textFieldExpression><![CDATA[$F{token_issue_date}]]></textFieldExpression>
+				</textField>
+				<textField>
+					<reportElement style="Detail" x="560" y="-1" width="90" height="15" uuid="c1b0f6f9-99a6-4c5a-83de-9941c8b52604">
+						<property name="com.jaspersoft.studio.spreadsheet.connectionID" value="a7517fa0-4c3b-480a-a8f5-661e50bdedc9"/>
+					</reportElement>
+					<textElement textAlignment="Center"/>
+					<textFieldExpression><![CDATA[$F{token_expiry_date}]]></textFieldExpression>
+				</textField>
+				<textField>
+					<reportElement style="Detail" x="653" y="0" width="47" height="15" uuid="80929eff-4ab9-486c-86e7-bda5b5a1c420">
+						<property name="com.jaspersoft.studio.spreadsheet.connectionID" value="cf2671c9-4c93-4fa1-bfab-83cac638cd4e"/>
+					</reportElement>
+					<textElement textAlignment="Center"/>
+					<textFieldExpression><![CDATA[$F{driver_id}]]></textFieldExpression>
+				</textField>
+				<textField>
+					<reportElement style="Detail" x="700" y="-1" width="47" height="15" uuid="a55594ef-67e1-4b81-a52f-0951aea84dc0">
+						<property name="com.jaspersoft.studio.spreadsheet.connectionID" value="b6ebba21-38aa-4fc0-94e3-29e4197f003f"/>
+					</reportElement>
+					<textElement textAlignment="Center"/>
+					<textFieldExpression><![CDATA[$F{route_id}]]></textFieldExpression>
+				</textField>
+			</frame>
+			<line>
+				<reportElement positionType="FixRelativeToBottom" x="97" y="16" width="705" height="1" uuid="e5f21b91-7f24-498e-97a1-0e93db9225a4"/>
+				<graphicElement>
+					<pen lineWidth="0.5" lineColor="#999999"/>
+				</graphicElement>
+			</line>
+		</band>
+	</detail>
+	<columnFooter>
+		<band splitType="Stretch"/>
+	</columnFooter>
+	<pageFooter>
+		<band height="40" splitType="Stretch">
+			<textField pattern="EEEEE dd MMMMM yyyy">
+				<reportElement style="Column header" x="671" y="0" width="131" height="20" forecolor="#000000" uuid="95484ca0-40b4-4752-95d8-1afbc33c820b"/>
+				<textElement textAlignment="Right">
+					<font size="12" isBold="false"/>
+				</textElement>
+				<textFieldExpression><![CDATA[new java.util.Date()]]></textFieldExpression>
+			</textField>
+			<staticText>
+				<reportElement x="80" y="10" width="267" height="20" uuid="0ec52099-dcd7-42f4-8baa-f3874f05208a"/>
+				<textElement>
+					<font size="12"/>
+				</textElement>
+				<text><![CDATA[Vehicle Records Report]]></text>
+			</staticText>
+			<textField>
+				<reportElement x="351" y="5" width="109" height="30" uuid="dd6825cc-d612-4e90-ae65-15f32d289519"/>
+				<textElement textAlignment="Right"/>
+				<textFieldExpression><![CDATA["Page " + $V{PAGE_NUMBER}]]></textFieldExpression>
+			</textField>
+			<textField evaluationTime="Report">
+				<reportElement x="460" y="5" width="113" height="30" uuid="5c23d701-fe0a-4d20-a794-a7413bde51e2"/>
+				<textElement textAlignment="Left"/>
+				<textFieldExpression><![CDATA[" of " + $V{PAGE_NUMBER}]]></textFieldExpression>
+			</textField>
+		</band>
+	</pageFooter>
+	<summary>
+		<band splitType="Stretch"/>
+	</summary>
+</jasperReport>

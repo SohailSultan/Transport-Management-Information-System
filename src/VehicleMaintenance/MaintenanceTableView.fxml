@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ScrollPane?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane fx:id="contentPane" prefHeight="600.0" prefWidth="947.0" stylesheets="@../ManageVehicle/ManageVehicle.css" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="VehicleMaintenance.MaintenanceTableController">
+   <children>
+      <ScrollPane layoutX="2.0" layoutY="72.0" prefHeight="484.0" prefWidth="943.0">
+         <content>
+            <TableView fx:id="MaintenanceTable" editable="true" prefHeight="506.0" prefWidth="982.0" style="-fx-background-color: silver;" tableMenuButtonVisible="true">
+               <columns>
+                  <TableColumn fx:id="ID_Col" prefWidth="100.0" text="Maintenance ID" />
+                  <TableColumn fx:id="Type_Col" prefWidth="132.0" text="Maintenance Type" />
+                  <TableColumn fx:id="Workshop_NameCol" prefWidth="123.0" text="Workshop Name" />
+                  <TableColumn fx:id="Amount_Col" prefWidth="107.0" text="Amount" />
+                  <TableColumn fx:id="Maintenance_DescCol" prefWidth="156.0" text="Maintenance Detail" />
+                  <TableColumn fx:id="VehicleRegID_Col" prefWidth="102.0" text="Vehicle Reg. ID" />
+                  <TableColumn fx:id="Schedule_Date_Col" prefWidth="93.0" text="Schedule Date" />
+                  <TableColumn fx:id="Completion_Date_Col" prefWidth="93.0" text="Completion Date" />
+               </columns>
+            </TableView>
+         </content>
+      </ScrollPane>
+      <Label layoutX="302.0" layoutY="29.0" prefHeight="29.0" prefWidth="401.0" stylesheets="@../ManageVehicle/ManageVehicle.css" text=" Vehicle Maintenance List" textFill="WHITE">
+         <font>
+            <Font name="Broadway" size="25.0" />
+         </font>
+      </Label>
+      <ImageView fitHeight="47.0" fitWidth="116.0" layoutX="119.0" layoutY="17.0" pickOnBounds="true">
+         <image>
+            <Image url="@../Pictures/Maintenance-icon.png" />
+         </image>
+      </ImageView>
+      <TextField fx:id="searchTextField" layoutX="663.0" layoutY="27.0" prefHeight="29.0" prefWidth="246.0" promptText="Enter ID/Type/Vehicle Reg No." style="-fx-background-radius: 20;" />
+   </children>
+</AnchorPane>

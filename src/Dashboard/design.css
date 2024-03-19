@@ -1,0 +1,23 @@
+#ButtonPane{
+	-fx-background-color: linear-gradient(to bottom right, #272b3f,#256b51);
+}
+
+.Button_hover:hover{
+	-fx-background-color:  #948454 ;
+	-fx-font-size: 18px;
+}
+
+.Button_hover:pressed{
+	-fx-background-color: Black;
+	-fx-font-size: 18px;
+}
+
+
+/* Set color for Pie Chart text */
+.chart-pie-label {
+    -fx-fill: white; 
+}
+
+.chart-title {
+    -fx-text-fill: white; /* Blue */
+}

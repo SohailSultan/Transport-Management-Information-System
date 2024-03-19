@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.Separator?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.shape.Line?>
+<?import javafx.scene.text.Font?>
+
+<Pane fx:id="screen_pane" prefHeight="680.0" prefWidth="940.0" stylesheets="@../Dashboard/Dashboard.css" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="ManageExpense.ExpenseMenuOptionController">
+   <children>
+      <Label layoutX="413.0" layoutY="41.0" prefHeight="29.0" prefWidth="260.0" stylesheets="@../ManageVehicle/ManageVehicle.css" text="EXPENSE TYPE" textFill="WHITE">
+         <font>
+            <Font name="Broadway" size="25.0" />
+         </font>
+      </Label>
+      <ImageView fitHeight="40.0" fitWidth="93.0" layoutX="281.0" layoutY="36.0" pickOnBounds="true">
+         <image>
+            <Image url="@../Pictures/Expense-icon.png" />
+         </image>
+      </ImageView>
+      <JFXButton alignment="TOP_CENTER" buttonType="RAISED" contentDisplay="TOP" layoutX="164.0" layoutY="181.0" onAction="#SalaryExpense" opacity="0.75" prefHeight="103.0" prefWidth="210.0" ripplerFill="WHITE" style="-fx-background-color: #795548; -fx-background-radius: 30 0 30 10; -fx-border-color: white; -fx-border-radius: 30 0 30 10;" text="SALARY" textFill="WHITE">
+         <font>
+            <Font name="Rockwell Extra Bold" size="21.0" />
+         </font>
+         <graphic>
+            <ImageView fitHeight="53.0" fitWidth="73.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../Pictures/payment-icon.png" />
+               </image>
+            </ImageView>
+         </graphic>
+      </JFXButton>
+      <JFXButton alignment="TOP_CENTER" buttonType="RAISED" contentDisplay="TOP" layoutX="558.0" layoutY="181.0" onAction="#FuelExpense" opacity="0.75" prefHeight="103.0" prefWidth="210.0" ripplerFill="WHITE" style="-fx-background-color: #D500F9; -fx-background-radius: 30 0 30 10; -fx-border-color: white; -fx-border-radius: 30 0 30 10;" text="FUEL" textFill="WHITE">
+         <font>
+            <Font name="Rockwell Extra Bold" size="21.0" />
+         </font>
+         <graphic>
+            <ImageView fitHeight="53.0" fitWidth="103.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../Pictures/fuelicon.png" />
+               </image>
+            </ImageView>
+         </graphic>
+      </JFXButton>
+      <JFXButton alignment="TOP_CENTER" buttonType="RAISED" contentDisplay="TOP" layoutX="164.0" layoutY="431.0" onAction="#TokenExpense" opacity="0.75" prefHeight="103.0" prefWidth="210.0" ripplerFill="WHITE" style="-fx-background-color: #01579B; -fx-background-radius: 30 0 30 10; -fx-border-color: white; -fx-border-radius: 30 0 30 10;" text="VEHICLE TOKEN" textFill="WHITE">
+         <font>
+            <Font name="Rockwell Extra Bold" size="18.0" />
+         </font>
+         <graphic>
+            <ImageView fitHeight="53.0" fitWidth="73.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../Pictures/token.png" />
+               </image>
+            </ImageView>
+         </graphic>
+      </JFXButton>
+      <JFXButton alignment="TOP_CENTER" buttonType="RAISED" contentDisplay="TOP" layoutX="558.0" layoutY="431.0" onAction="#MiscExpense" opacity="0.75" prefHeight="103.0" prefWidth="210.0" ripplerFill="WHITE" style="-fx-background-color: #2E7D32; -fx-background-radius: 30 0 30 10; -fx-border-color: white; -fx-border-radius: 30 0 30 10;" text="Miscellaneous" textFill="WHITE">
+         <font>
+            <Font name="Rockwell Extra Bold" size="19.0" />
+         </font>
+         <graphic>
+            <ImageView fitHeight="53.0" fitWidth="73.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../Pictures/miscellaneous-icon.png" />
+               </image>
+            </ImageView>
+         </graphic>
+      </JFXButton>
+      <Separator layoutY="113.0" prefHeight="6.0" prefWidth="939.0" />
+      <Line endX="-9.0" endY="-62.0" layoutX="465.0" layoutY="177.0" startX="-9.0" startY="501.0" stroke="#f5d4d4" strokeWidth="0.3" />
+      <Line endX="833.0000610351562" layoutX="107.0" layoutY="367.0" startX="-107.0" stroke="WHITE" strokeWidth="0.3" />
+   </children>
+</Pane>
